@@ -1,0 +1,321 @@
+# Translation of Plugins - Site Toolkit - Stable (latest release) in Italian
+# This file is distributed under the same license as the Plugins - Site Toolkit - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: +0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"Language: it\n"
+"Project-Id-Version: Plugins - Site Toolkit - Stable (latest release)\n"
+
+#: toolkit/inc/rest-api.php:19
+msgid "REST API restricted to authenticated users."
+msgstr "REST API limitata agli utenti autenticati."
+
+#: toolkit/inc/posts-columns.php:23
+msgid "Thumbnail"
+msgstr "Miniatura"
+
+#: toolkit/inc/pages-columns.php:21
+msgid "Template"
+msgstr "Template"
+
+#: toolkit/admin/index.php:38
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:915
+msgid "Removes all the special chars in the filename when you upload any file."
+msgstr "Rimuove tutti i caratteri speciali nel nome del file quando lo si carica."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:886
+msgid "You can choose your own URL instead of using the default WordPress URL."
+msgstr "È possibile scegliere il proprio URL invece di utilizzare quello predefinito di WordPress."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:858
+msgid "Shows the Page Template name in a column in the admin pages listing."
+msgstr "Mostra il nome del modello di pagina in una colonna dell'elenco delle pagine di amministrazione."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:849
+msgid "Shows the thumbnail in a column in the admin posts listing."
+msgstr "Mostra la miniatura in una colonna dell'elenco dei post nella bacheca."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:829
+msgid "Redirects authors archive, dates archive, tags archive to the homepage."
+msgstr "Reindirizza l'archivio autori, l'archivio date e l'archivio tag alla homepage."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:817
+msgid "Redirect tags"
+msgstr "Reindirizza tag"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:805
+msgid "Redirect date"
+msgstr "Reindirizza data"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:793
+msgid "Redirect author"
+msgstr "Reindirizza autore"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:782
+msgid "Redirects the attachment pages to the homepage."
+msgstr "Reindirizza le pagine degli allegati alla homepage."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:773
+msgid "Removes the prefix in the archive title."
+msgstr "Rimuove il prefisso nel titolo dell'archivio."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:755
+msgid "Forces all the images to have an alt attribute."
+msgstr "Impone che tutte le immagini abbiano un attributo alt."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:746
+msgid "Adds the If-Modified-Since Header into all pages/posts."
+msgstr "Aggiunge l'intestazione If-Modified-Since in tutte le pagine/post."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:737
+msgid "Sets up a pretty permalink for the search functionality."
+msgstr "Imposta un permalink pretty per la funzionalità di ricerca."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:717
+msgid "You can create a custom text Dashboard widget."
+msgstr "È possibile creare un widget di testo personalizzato nella Bacheca."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:714
+msgid "Side"
+msgstr "Laterale"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:710
+msgid "Normal"
+msgstr "Normale"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:707
+msgid "Context"
+msgstr "Contesto"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:703
+msgid "Add the content of your custom widget here."
+msgstr "Aggiungere qui il contenuto del widget personalizzato."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:676
+msgid "Removes all the Dashboard widgets."
+msgstr "Rimuove  tutti i widget dalla Bacheca."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:658
+msgid "Replaces the style and javascript version with the file version."
+msgstr "Sostituisce la versione dei file di stile/Javascript con la versione del file."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:649
+msgid "Removes the WordPress version meta in the header."
+msgstr "Rimuove il meta della versione di WordPress nell'intestazione."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:640
+msgid "Removes RSD link, wlwmanifest Link, shortlink, previous/next post Link in the header."
+msgstr "Rimuove il collegamento RSD, il collegamento wlwmanifest, il collegamento breve, il collegamento post precedente/successivo nell'intestazione."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:631
+msgid "Disables Rest API and removes Rest API links (only for not logged in users)."
+msgstr "Disabilita Rest API e rimuove i collegamenti Rest API (solo per gli utenti non registrati)."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:622
+msgid "Removes RSS feeds links in the header."
+msgstr "Rimuove i link ai feed RSS nell'intestazione."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:607
+#: toolkit/admin/class-site-toolkit-options-page.php:800
+#: toolkit/admin/class-site-toolkit-options-page.php:812
+#: toolkit/admin/class-site-toolkit-options-page.php:824
+msgid "No"
+msgstr "No"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:603
+#: toolkit/admin/class-site-toolkit-options-page.php:796
+#: toolkit/admin/class-site-toolkit-options-page.php:808
+#: toolkit/admin/class-site-toolkit-options-page.php:820
+msgid "Yes"
+msgstr "Si"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:587
+msgid "Removes the extra code to generate emojis in the header."
+msgstr "Rimuove il codice aggiuntivo per generare emoji nell'intestazione."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:565
+msgid "Clean File Names"
+msgstr "Nomi dei file senza caratteri speciali"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:541
+msgid "Change Login URL"
+msgstr "Modifica l'URL del login"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:517
+msgid "Add Template Column To Pages"
+msgstr "Aggiunge la colonna Template nell'elenco delle pagine"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:509
+msgid "Add Thumbnail Column To Posts"
+msgstr "Aggiunge la colonna Miniatura nell'elenco dei post"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:485
+msgid "Redirect Archives"
+msgstr "Reindirizza Archivi"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:477
+msgid "Redirect Attachments Pages"
+msgstr "Reindirizza Pagine degli allegati"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:469
+msgid "Remove Archive Title Prefix"
+msgstr "Rimuove Prefisso nel Titolo dell'archivio"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:445
+msgid "Image Alt Attribute"
+msgstr "Attributo Alt immagine"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:437
+msgid "If-Modified-Since Header"
+msgstr "Intestazione If-Modified-Since"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:429
+msgid "Pretty Permalink For Search"
+msgstr "Permalink pretty per la funzionalità di ricerca"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:405
+msgid "Custom Dashboard Widget"
+msgstr "Widget di testo personalizzato"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:397
+msgid "Remove Dashboard Widgets"
+msgstr "Rimuove Widget della Bacheca"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:373
+msgid "Change Style/Javascript Version"
+msgstr "Modifica la versione dei file di stile/Javascript"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:365
+msgid "Remove WordPress Version"
+msgstr "Rimuove la versione di WordPress"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:356
+msgid "Remove Header Links"
+msgstr "Rimuove i link di Intestazione"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:348
+msgid "Disable Rest API"
+msgstr "Disabilita le REST API"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:340
+msgid "Removes RSS Feeds Links"
+msgstr "Rimuove i link ai Feed RSS"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:332
+msgid "Disable Emoji Support"
+msgstr "Disattiva il supporto per le emoji"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:307
+msgid " options"
+msgstr " &nbsp;"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:307
+msgid "Save "
+msgstr "Salva opzioni "
+
+#: toolkit/admin/class-site-toolkit-options-page.php:212
+#: toolkit/admin/class-site-toolkit-options-page.php:231
+#: toolkit/admin/class-site-toolkit-options-page.php:269
+msgid "Uploads"
+msgstr "File"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:209
+#: toolkit/admin/class-site-toolkit-options-page.php:229
+#: toolkit/admin/class-site-toolkit-options-page.php:265
+msgid "Login"
+msgstr "Login"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:206
+#: toolkit/admin/class-site-toolkit-options-page.php:227
+#: toolkit/admin/class-site-toolkit-options-page.php:261
+msgid "Listing"
+msgstr "Liste"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:203
+#: toolkit/admin/class-site-toolkit-options-page.php:225
+#: toolkit/admin/class-site-toolkit-options-page.php:249
+msgid "Dashboard"
+msgstr "Bacheca"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:200
+#: toolkit/admin/class-site-toolkit-options-page.php:223
+#: toolkit/admin/class-site-toolkit-options-page.php:257
+msgid "Archives"
+msgstr "Archivi"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:197
+#: toolkit/admin/class-site-toolkit-options-page.php:221
+#: toolkit/admin/class-site-toolkit-options-page.php:253
+msgid "SEO"
+msgstr "SEO"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:194
+#: toolkit/admin/class-site-toolkit-options-page.php:219
+#: toolkit/admin/class-site-toolkit-options-page.php:245
+msgid "Header"
+msgstr "Header"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:183
+msgid "Dismiss this notice."
+msgstr "Rimuovi questa notifica."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:154
+msgid "Uploads Options saved."
+msgstr "Opzioni Media salvate."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:150
+msgid "Login Options saved."
+msgstr "Opzioni Login salvate."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:146
+msgid "Listing Options saved."
+msgstr "Opzioni Liste salvate."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:142
+msgid "Dashboard Options saved."
+msgstr "Opzioni Bacheca salvate."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:138
+msgid "Archives Options saved."
+msgstr "Opzioni Archivi salvate."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:134
+msgid "SEO Options saved."
+msgstr "Opzioni SEO salvate."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:130
+msgid "Header Options saved."
+msgstr "Opzioni Header salvate."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:79
+msgid "Site Toolkit Options"
+msgstr "Opzioni di Site Toolkit"
+
+#. Author URI of the plugin
+msgid "https://piccioni.london"
+msgstr "https://piccioni.london"
+
+#. Author of the plugin
+msgid "xlthlx"
+msgstr "xlthlx"
+
+#. Description of the plugin
+msgid "Sets of tools for WordPress admin and frontend."
+msgstr "Set di strumenti per l'amministrazione e il frontend di WordPress."
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/site-toolkit/"
+msgstr "https://wordpress.org/plugins/site-toolkit/"
+
+#. Plugin Name of the plugin
+#: toolkit/admin/class-site-toolkit-options-page.php:80
+msgid "Site Toolkit"
+msgstr "Site Toolkit"

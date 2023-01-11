@@ -1,0 +1,364 @@
+# Copyright (C) 2022 xlthlx
+# This file is distributed under the GPLv3+.
+msgid ""
+msgstr ""
+"Project-Id-Version: Site Toolkit 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/site-toolkit\n"
+"POT-Creation-Date: 2023-01-05T12:01:50+00:00\n"
+"PO-Revision-Date: 2023-01-05 12:06+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Domain: site-toolkit\n"
+
+#. Plugin Name of the plugin
+#: toolkit/admin/class-site-toolkit-options-page.php:80
+msgid "Site Toolkit"
+msgstr "Site Toolkit"
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/site-toolkit/"
+msgstr "https://wordpress.org/plugins/site-toolkit/"
+
+#. Description of the plugin
+msgid "Sets of tools for WordPress admin and frontend."
+msgstr "Set di strumenti per l'amministrazione e il frontend di WordPress."
+
+#. Author of the plugin
+msgid "xlthlx"
+msgstr "xlthlx"
+
+#. Author URI of the plugin
+msgid "https://piccioni.london"
+msgstr "https://piccioni.london"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:79
+msgid "Site Toolkit Options"
+msgstr "Opzioni di Site Toolkit"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:147
+msgid "Header Options saved."
+msgstr "Opzioni Header salvate."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:151
+msgid "SEO Options saved."
+msgstr "Opzioni SEO salvate."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:155
+msgid "Archives Options saved."
+msgstr "Opzioni Archivi salvate."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:159
+msgid "Dashboard Options saved."
+msgstr "Opzioni Bacheca salvate."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:163
+msgid "Listing Options saved."
+msgstr "Opzioni Liste salvate."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:167
+msgid "Login Options saved."
+msgstr "Opzioni Login salvate."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:171
+msgid "Uploads Options saved."
+msgstr "Opzioni Media salvate."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:200
+msgid "Dismiss this notice."
+msgstr "Rimuovi questa notifica."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:211
+#: toolkit/admin/class-site-toolkit-options-page.php:236
+#: toolkit/admin/class-site-toolkit-options-page.php:262
+msgid "Header"
+msgstr "Header"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:214
+#: toolkit/admin/class-site-toolkit-options-page.php:238
+#: toolkit/admin/class-site-toolkit-options-page.php:270
+msgid "SEO"
+msgstr "SEO"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:217
+#: toolkit/admin/class-site-toolkit-options-page.php:240
+#: toolkit/admin/class-site-toolkit-options-page.php:274
+msgid "Archives"
+msgstr "Archivi"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:220
+#: toolkit/admin/class-site-toolkit-options-page.php:242
+#: toolkit/admin/class-site-toolkit-options-page.php:266
+msgid "Dashboard"
+msgstr "Bacheca"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:223
+#: toolkit/admin/class-site-toolkit-options-page.php:244
+#: toolkit/admin/class-site-toolkit-options-page.php:278
+msgid "Listing"
+msgstr "Liste"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:226
+#: toolkit/admin/class-site-toolkit-options-page.php:246
+#: toolkit/admin/class-site-toolkit-options-page.php:282
+msgid "Login"
+msgstr "Login"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:229
+#: toolkit/admin/class-site-toolkit-options-page.php:248
+#: toolkit/admin/class-site-toolkit-options-page.php:286
+msgid "Uploads"
+msgstr "File"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:324
+msgid "Save "
+msgstr "Salva opzioni "
+
+#: toolkit/admin/class-site-toolkit-options-page.php:324
+msgid " options"
+msgstr " "
+
+#: toolkit/admin/class-site-toolkit-options-page.php:349
+msgid "Disable Emoji Support"
+msgstr "Disattiva il supporto per le emoji"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:357
+msgid "Removes RSS Feeds Links"
+msgstr "Rimuove i link ai Feed RSS"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:365
+msgid "Disable Rest API"
+msgstr "Disabilita le REST API"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:373
+msgid "Remove Header Links"
+msgstr "Rimuove i link di Intestazione"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:382
+msgid "Remove WordPress Version"
+msgstr "Rimuove la versione di WordPress"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:390
+msgid "Change Style/Javascript Version"
+msgstr "Modifica la versione dei file di stile/Javascript"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:414
+msgid "Remove Dashboard Widgets"
+msgstr "Rimuove Widget della Bacheca"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:422
+msgid "Custom Dashboard Widget"
+msgstr "Widget di testo personalizzato"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:446
+msgid "Pretty Permalink For Search"
+msgstr "Permalink pretty per la funzionalità di ricerca"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:454
+msgid "If-Modified-Since Header"
+msgstr "Intestazione If-Modified-Since"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:462
+msgid "Image Alt Attribute"
+msgstr "Attributo Alt immagine"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:486
+msgid "Remove Archive Title Prefix"
+msgstr "Rimuove Prefisso nel Titolo dell'archivio"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:494
+msgid "Redirect Attachments Pages"
+msgstr "Reindirizza Pagine degli allegati"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:502
+msgid "Redirect Archives"
+msgstr "Reindirizza Archivi"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:526
+msgid "Add Thumbnail Column To Posts"
+msgstr "Aggiunge la colonna Miniatura nell'elenco dei post"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:534
+msgid "Add Template Column To Pages"
+msgstr "Aggiunge la colonna Template nell'elenco delle pagine"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:558
+msgid "Change Login URL"
+msgstr "Modifica l'URL del login"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:582
+msgid "Clean File Names"
+msgstr "Nomi dei file senza caratteri speciali"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:604
+msgid "Removes the extra code to generate emojis in the header."
+msgstr "Rimuove il codice aggiuntivo per generare emoji nell'intestazione."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:620
+#: toolkit/admin/class-site-toolkit-options-page.php:813
+#: toolkit/admin/class-site-toolkit-options-page.php:825
+#: toolkit/admin/class-site-toolkit-options-page.php:837
+msgid "Yes"
+msgstr "Si"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:624
+#: toolkit/admin/class-site-toolkit-options-page.php:817
+#: toolkit/admin/class-site-toolkit-options-page.php:829
+#: toolkit/admin/class-site-toolkit-options-page.php:841
+msgid "No"
+msgstr "No"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:639
+msgid "Removes RSS feeds links in the header."
+msgstr "Rimuove i link ai feed RSS nell'intestazione."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:648
+msgid ""
+"Disables Rest API and removes Rest API links (only for not logged in users)."
+msgstr ""
+"Disabilita Rest API e rimuove i collegamenti Rest API (solo per gli utenti "
+"non registrati)."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:657
+msgid ""
+"Removes RSD link, wlwmanifest Link, shortlink, previous/next post Link in "
+"the header."
+msgstr ""
+"Rimuove il collegamento RSD, il collegamento wlwmanifest, il collegamento "
+"breve, il collegamento post precedente/successivo nell'intestazione."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:666
+msgid "Removes the WordPress version meta in the header."
+msgstr "Rimuove il meta della versione di WordPress nell'intestazione."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:675
+msgid "Replaces the style and javascript version with the file version."
+msgstr ""
+"Sostituisce la versione dei file di stile/Javascript con la versione del "
+"file."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:693
+msgid "Removes all the Dashboard widgets."
+msgstr "Rimuove  tutti i widget dalla Bacheca."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:720
+msgid "Add the content of your custom widget here."
+msgstr "Aggiungere qui il contenuto del widget personalizzato."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:724
+msgid "Context"
+msgstr "Contesto"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:727
+msgid "Normal"
+msgstr "Normale"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:731
+msgid "Side"
+msgstr "Laterale"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:734
+msgid "You can create a custom text Dashboard widget."
+msgstr "È possibile creare un widget di testo personalizzato nella Bacheca."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:754
+msgid "Sets up a pretty permalink for the search functionality."
+msgstr "Imposta un permalink pretty per la funzionalità di ricerca."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:763
+msgid "Adds the If-Modified-Since Header into all pages/posts."
+msgstr "Aggiunge l'intestazione If-Modified-Since in tutte le pagine/post."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:772
+msgid "Forces all the images to have an alt attribute."
+msgstr "Impone che tutte le immagini abbiano un attributo alt."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:790
+msgid "Removes the prefix in the archive title."
+msgstr "Rimuove il prefisso nel titolo dell'archivio."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:799
+msgid "Redirects the attachment pages to the homepage."
+msgstr "Reindirizza le pagine degli allegati alla homepage."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:810
+msgid "Redirect author"
+msgstr "Reindirizza autore"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:822
+msgid "Redirect date"
+msgstr "Reindirizza data"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:834
+msgid "Redirect tags"
+msgstr "Reindirizza tag"
+
+#: toolkit/admin/class-site-toolkit-options-page.php:846
+msgid "Redirects authors archive, dates archive, tags archive to the homepage."
+msgstr ""
+"Reindirizza l'archivio autori, l'archivio date e l'archivio tag alla "
+"homepage."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:866
+msgid "Shows the thumbnail in a column in the admin posts listing."
+msgstr "Mostra la miniatura in una colonna dell'elenco dei post nella bacheca."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:875
+msgid "Shows the Page Template name in a column in the admin pages listing."
+msgstr ""
+"Mostra il nome del modello di pagina in una colonna dell'elenco delle pagine "
+"di amministrazione."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:903
+msgid "You can choose your own URL instead of using the default WordPress URL."
+msgstr ""
+"È possibile scegliere il proprio URL invece di utilizzare quello predefinito "
+"di WordPress."
+
+#: toolkit/admin/class-site-toolkit-options-page.php:932
+msgid "Removes all the special chars in the filename when you upload any file."
+msgstr ""
+"Rimuove tutti i caratteri speciali nel nome del file quando lo si carica."
+
+#: toolkit/admin/index.php:38
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: toolkit/inc/pages-columns.php:21
+msgid "Template"
+msgstr "Template"
+
+#: toolkit/inc/posts-columns.php:23
+msgid "Thumbnail"
+msgstr "Miniatura"
+
+#: toolkit/inc/rest-api.php:19
+msgid "REST API restricted to authenticated users."
+msgstr "REST API limitata agli utenti autenticati."
+
+#~ msgid "Last modified"
+#~ msgstr "Data ultima modifica"
+
+#~ msgid "Date"
+#~ msgstr "Data"
+
+#~ msgid "at"
+#~ msgstr "alle"
+
+#~ msgid "Disable XML-RPC"
+#~ msgstr "Disabilita XML-RPC"
+
+#~ msgid "Remove HTML Comments"
+#~ msgstr "Rimuove commenti HTML"
+
+#~ msgid "Disables pingbacks and trackbacks and remove X-Pingback link."
+#~ msgstr ""
+#~ "Disabilita pingback e trackback e rimuove il collegamento X-Pingback."
+
+#~ msgid "Removes HTML comments in the code."
+#~ msgstr "Rimuove commenti HTML nel codice."

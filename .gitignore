@@ -1,0 +1,42 @@
+# Ignore all files starting with .
+.*
+._*
+
+# Do NOT ignore .gitignore
+!.gitignore
+
+# Do NOT ignore .distignore
+!.distignore
+
+# Do NOT ignore .readme.md
+!readme.md
+
+# Do NOT ignore .github
+!.github
+
+# Ignore all files that start with ~
+~*
+
+# Ignore packaged files
+*.7z
+*.csv
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Ignore OS generated files
+ehthumbs.db
+Thumbs.db
+
+# Ignore log files and databases
+*.log
+
+# Build Tools
+.idea
+/package-lock.json
+/composer.lock
+/vendor/
