@@ -1,6 +1,6 @@
 # ![WP INCI](https://ps.w.org/site-toolkit/assets/banner-772x250.png "WordPress Plugin")
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blueviolet)](https://plugintests.com/plugins/wporg/wp-inci/latest) [![License](https://img.shields.io/badge/license-GPL_v3%2B-blueviolet)](https://github.com/xlthlx/wp-inci/blob/main/LICENSE)
+[![Version](https://img.shields.io/badge/version-1.0.1-blueviolet)](https://plugintests.com/plugins/wporg/wp-inci/latest) [![License](https://img.shields.io/badge/license-GPL_v3%2B-blueviolet)](https://github.com/xlthlx/wp-inci/blob/main/LICENSE)
 ![WordPress Plugin Downloads](https://img.shields.io/wordpress/plugin/dt/site-toolkit?color=blueviolet)
 
 
@@ -8,7 +8,7 @@
 **Donate link:** https://paypal.me/xlthlx \
 **Tags:** archives,columns,emoji,header,tools,widgets \
 **Requires at least:** 5.9 \
-**Tested up to:** 6.1.1 \
+**Tested up to:** 6.2 \
 **Requires PHP:** 7.4 \
 **Stable tag:** 1.0.0 \
 **License:** GPLv3 or later \
@@ -108,6 +108,10 @@ Yes, just use the .POT file in the `languages` folder.
 
 
 ## Changelog
+
+### 1.0.1
+
+* Tested up to 6.2
 
 ### 1.0
 
