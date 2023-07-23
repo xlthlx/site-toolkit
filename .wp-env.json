@@ -1,5 +1,5 @@
 {
-  "core":  "https://downloads.wordpress.org/release/wordpress-6.3-RC1.zip",
+  "core":  null,
   "plugins": [
     "https://downloads.wordpress.org/plugin/wordpress-beta-tester.zip",
     "https://downloads.wordpress.org/plugin/query-monitor.zip",

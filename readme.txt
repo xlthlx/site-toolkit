@@ -3,9 +3,9 @@ Contributors: xlthlx
 Donate link: https://paypal.me/xlthlx
 Tags: archives,columns,emoji,header,tools,widgets
 Requires at least: 5.9
-Tested up to: 6.2
+Tested up to: 6.3
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -75,6 +75,9 @@ Yes, just use the .POT file in the `languages` folder.
 7. Uploads
 
 == Changelog ==
+
+= 1.0.2 =
+* Tested up to 6.3
 
 = 1.0.1 =
 * Tested up to 6.2
