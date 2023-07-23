@@ -14,6 +14,9 @@
 # Do NOT ignore .github
 !.github
 
+# Do NOT ignore .wp-env.json
+!.wp-env.json
+
 # Ignore all files that start with ~
 ~*
 
@@ -40,3 +43,5 @@ Thumbs.db
 /package-lock.json
 /composer.lock
 /vendor/
+/content/
+/node_modules

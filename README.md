@@ -1,6 +1,6 @@
-# ![WP INCI](https://ps.w.org/site-toolkit/assets/banner-772x250.png "WordPress Plugin")
+# ![Site Toolkit](https://ps.w.org/site-toolkit/assets/banner-772x250.png "WordPress Plugin")
 
-[![Version](https://img.shields.io/badge/version-1.0.1-blueviolet)](https://plugintests.com/plugins/wporg/wp-inci/latest) [![License](https://img.shields.io/badge/license-GPL_v3%2B-blueviolet)](https://github.com/xlthlx/wp-inci/blob/main/LICENSE)
+[![Version](https://img.shields.io/badge/version-1.0.1-blueviolet)](https://plugintests.com/plugins/wporg/site-toolkit/latest) [![License](https://img.shields.io/badge/license-GPL_v3%2B-blueviolet)](https://github.com/xlthlx/site-toolkit/blob/main/LICENSE)
 ![WordPress Plugin Downloads](https://img.shields.io/wordpress/plugin/dt/site-toolkit?color=blueviolet)
 
 

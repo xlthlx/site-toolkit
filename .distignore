@@ -6,6 +6,7 @@
 .gitignore
 .gitattributes
 .DS_Store
+.wp-env.json
 Thumbs.db
 bin
 build
