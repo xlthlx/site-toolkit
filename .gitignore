@@ -9,10 +9,10 @@
 !.distignore
 
 # Do NOT ignore .readme.md
-!readme.md
+!README.md
 
-# Do NOT ignore .github
-!.github
+# Do NOT ignore .circleci
+!.circleci
 
 # Do NOT ignore .wp-env.json
 !.wp-env.json
@@ -30,18 +30,25 @@
 *.rar
 *.tar
 *.zip
+*.sql
+*.tar.gz
 
 # Ignore OS generated files
 ehthumbs.db
 Thumbs.db
+.DS_Store
 
-# Ignore log files and databases
+# Ignore log files
 *.log
+
+# Ignore lock files
+*.lock
 
 # Build Tools
 .idea
-/package-lock.json
-/composer.lock
-/vendor/
-/content/
+package-lock.json
 /node_modules
+/vendor
+
+# Project specific
+/content
