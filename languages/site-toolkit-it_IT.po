@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Site Toolkit 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/site-toolkit\n"
 "POT-Creation-Date: 2023-01-05T12:01:50+00:00\n"
-"PO-Revision-Date: 2023-01-05 12:06+0000\n"
+"PO-Revision-Date: 2023-11-06 18:35+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: it_IT\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4\n"
 "X-Domain: site-toolkit\n"
 
 #. Plugin Name of the plugin
@@ -121,7 +121,7 @@ msgstr "Salva opzioni "
 
 #: toolkit/admin/class-site-toolkit-options-page.php:324
 msgid " options"
-msgstr " "
+msgstr " opzioni"
 
 #: toolkit/admin/class-site-toolkit-options-page.php:349
 msgid "Disable Emoji Support"

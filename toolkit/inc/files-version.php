@@ -63,8 +63,11 @@ function stk_change_version_from_style_js( $src ) {
 
 		// External script/css.
 		if ( strpos( $clean_src, site_url() ) === false ) {
-			$return = preg_replace( '~(\?|&)ver=[^&]*~', '', $src );
+			$return = preg_replace( '~(\?)ver=[^&]*~', '', $src );
 
+			if ( false === preg_replace( '~(\?)ver=[^&]*~', '', $src ) ) {
+				$return = preg_replace( '~&ver=[^&]*~', '', $src );
+			}
 		}
 
 		// Internal wp-admin.

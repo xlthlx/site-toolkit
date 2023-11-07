@@ -13,12 +13,13 @@
  * @return array $columns
  */
 function stk_page_column_views( $columns ) {
-	 unset( $columns['comments'], $columns['date'] );
+	 unset( $columns['date'] );
 
 	return array_merge(
 		$columns,
 		array(
 			'page-layout' => __( 'Template', 'site-toolkit' ),
+			'date'        => __( 'Date', 'site-toolkit' ),
 		)
 	);
 

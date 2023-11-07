@@ -7,6 +7,8 @@
 
 /**
  * Remove default style for comments widget.
+ *
+ * @return void
  */
 function stk_remove_comments_style() {
 	global $wp_widget_factory;
@@ -26,6 +28,8 @@ function stk_remove_comments_style() {
 
 /**
  * Remove RSD link, wlwmanifest Link, Shortlink, Previous/Next Post Link in the header.
+ *
+ * @return void
  */
 function stk_disable_links() { 
 	remove_action( 'wp_head', 'adjacent_posts_rel_link' );

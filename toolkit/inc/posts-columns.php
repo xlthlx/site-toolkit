@@ -20,7 +20,8 @@ function stk_posts_columns( $columns ) {
 		$columns = array_merge(
 			$columns,
 			array(
-				'thumbs'   => __( 'Thumbnail', 'site-toolkit' ),
+				'thumbs' => __( 'Thumbnail', 'site-toolkit' ),
+				'date'   => __( 'Date', 'site-toolkit' ),
 			)
 		);
 	}
@@ -36,6 +37,6 @@ function stk_posts_columns( $columns ) {
  */
 function stk_posts_custom_columns( $column_name, $id ) {
 	if ( 'thumbs' === $column_name ) {
-		echo get_the_post_thumbnail( $id, 'thumbnail' );
+		echo get_the_post_thumbnail( $id, array( 100, 100 ) );
 	}
 }

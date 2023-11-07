@@ -2,16 +2,16 @@
 # This file is distributed under the GPLv3+.
 msgid ""
 msgstr ""
-"Project-Id-Version: Site Toolkit 1.0.2\n"
+"Project-Id-Version: Site Toolkit 1.0.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/site-toolkit\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-07-23T15:10:01+01:00\n"
+"POT-Creation-Date: 2023-11-07T09:48:20+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.8.1\n"
+"X-Generator: WP-CLI 2.9.0\n"
 "X-Domain: site-toolkit\n"
 
 #. Plugin Name of the plugin
@@ -313,6 +313,11 @@ msgstr ""
 
 #: toolkit/inc/pages-columns.php:21
 msgid "Template"
+msgstr ""
+
+#: toolkit/inc/pages-columns.php:22
+#: toolkit/inc/posts-columns.php:24
+msgid "Date"
 msgstr ""
 
 #: toolkit/inc/posts-columns.php:23

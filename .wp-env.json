@@ -9,7 +9,7 @@
     "."
   ],
   "mappings": {
-    "wp-content": "./content"
+    "wp-content": "./wp-content"
   },
   "port": 1040,
   "testsPort": 1041,

@@ -14,7 +14,7 @@
  * @return array Difference between the two arrays.
  */
 function stk_disable_emojis_remove_dns_prefetch( $urls, $relation_type ) {
-	if ( 'dns-prefetch' == $relation_type ) {
+	if ( 'dns-prefetch' === $relation_type ) {
 		$emoji_svg_url_bit = 'https://s.w.org/images/core/emoji/';
 		foreach ( $urls as $key => $url ) {
 			if ( strpos( $url, $emoji_svg_url_bit ) !== false ) {

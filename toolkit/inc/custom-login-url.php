@@ -87,8 +87,8 @@ function stk_wp_loaded() {
 	if ( $wp_login_php ) {
 		$referer   = wp_get_referer();
 		$i_referer = parse_url( $referer );
-		if ( false !== strpos( $referer, 'wp-activate.php' ) && ! empty( $i_referer['query'] )
-		) {
+		if ( isset( $i_referer['query'] ) && false !== strpos( $referer, 'wp-activate.php' ) ) {
+			$referer = (array) $referer;
 			parse_str( $referer['query'], $referer );
 
 			$result = wpmu_activate_signup( $referer['key'] );
@@ -241,5 +241,4 @@ function stk_admin_bar_body_class( $wp_classes, $extra_classes ) {
 	}
 
 	return $wp_classes;
-
 }

@@ -51,4 +51,4 @@ package-lock.json
 /vendor
 
 # Project specific
-/content
+/wp-content

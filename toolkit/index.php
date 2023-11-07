@@ -56,19 +56,11 @@ if ( isset( $stk_general ) ) {
 if ( isset( $stk_dashboard ) ) {
 	foreach ( $stk_dashboard as $key => $value ) {
 		// Radio fields yes/no.
-		if ( 'yes' === $value ) {
-			switch ( $key ) {
-				case 'dashboard_widgets':
-					add_action( 'wp_dashboard_setup', 'stk_disable_dashboard_widgets', 999 );
-					break;
-			}
+		if ( ( 'yes' === $value ) && ( 'dashboard_widgets' === $key ) ) {
+			add_action( 'wp_dashboard_setup', 'stk_disable_dashboard_widgets', 999 );
 		}
-		if ( $value ) {
-			switch ( $key ) {
-				case 'custom_widgets_title':
-					add_action( 'wp_dashboard_setup', 'stk_add_dashboard_widgets' );
-					break;
-			}
+		if ( $value && ( 'custom_widgets_title' === $key ) ) {
+			add_action( 'wp_dashboard_setup', 'stk_add_dashboard_widgets' );
 		}
 	}
 }
@@ -154,21 +146,17 @@ if ( isset( $stk_listing ) ) {
  */
 if ( isset( $stk_login ) ) {
 	foreach ( $stk_login as $key => $value ) {
-		if ( '' !== $value ) {
-			switch ( $key ) {
-				case 'stk_login':
-					add_action( 'plugins_loaded', 'stk_plugins_loaded', 1 );
-					add_action( 'wp_loaded', 'stk_wp_loaded' );
+		if ( ( '' !== $value ) && ( 'stk_login' === $key ) ) {
+			add_action( 'plugins_loaded', 'stk_plugins_loaded', 1 );
+			add_action( 'wp_loaded', 'stk_wp_loaded' );
 
-					add_filter( 'site_url', 'stk_site_url', 10, 4 );
-					add_filter( 'wp_redirect', 'stk_wp_redirect' );
+			add_filter( 'site_url', 'stk_site_url', 10, 4 );
+			add_filter( 'wp_redirect', 'stk_wp_redirect' );
 
-					add_filter( 'site_option_welcome_email', 'stk_welcome_email' );
-					add_filter( 'body_class', 'stk_admin_bar_body_class', 10, 2 );
+			add_filter( 'site_option_welcome_email', 'stk_welcome_email' );
+			add_filter( 'body_class', 'stk_admin_bar_body_class', 10, 2 );
 
-					remove_action( 'template_redirect', 'wp_redirect_admin_locations', 1000 );
-					break;
-			}
+			remove_action( 'template_redirect', 'wp_redirect_admin_locations', 1000 );
 		}
 	}
 }
@@ -179,15 +167,9 @@ if ( isset( $stk_login ) ) {
 if ( isset( $stk_uploads ) ) {
 	foreach ( $stk_uploads as $key => $value ) {
 		// Radio fields yes/no.
-		if ( 'yes' === $value ) {
-			switch ( $key ) {
-				case 'clean_names':
-					if ( is_admin() ) {
-						add_action( 'wp_handle_upload_prefilter', 'stk_upload_filter' );
-						add_action( 'add_attachment', 'stk_update_attachment_title' );
-					}
-					break;
-			}
+		if ( ( 'yes' === $value ) && ( 'clean_names' === $key ) && is_admin() ) {
+			add_action( 'wp_handle_upload_prefilter', 'stk_upload_filter' );
+			add_action( 'add_attachment', 'stk_update_attachment_title' );
 		}
 	}
 }
