@@ -179,5 +179,3 @@ if ( isset( $stk_uploads ) ) {
 		}
 	}
 }
-
-
