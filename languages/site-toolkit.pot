@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-11-07T09:48:20+00:00\n"
+"POT-Creation-Date: 2023-11-08T20:45:56+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.9.0\n"
 "X-Domain: site-toolkit\n"
@@ -272,7 +272,7 @@ msgid "Removes the prefix in the archive title."
 msgstr ""
 
 #: toolkit/admin/class-site-toolkit-options-page.php:782
-msgid "Redirects the attachment pages to the homepage."
+msgid "Redirects the attachment pages to the file url."
 msgstr ""
 
 #: toolkit/admin/class-site-toolkit-options-page.php:793

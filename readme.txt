@@ -31,7 +31,7 @@ It has seven sections to manage different functionalities:
 
 = Archives =
 1. Remove Archive Title Prefix: Removes the prefix in the archive title.
-2. Redirect Attachments Pages: Redirects the attachment pages to the homepage.
+2. Redirect Attachments Pages: Redirects the attachment pages to the file url.
 3. Redirect Archives: Redirects authors archive, dates archive, tags archive to the homepage.
 
 = Dashboard =

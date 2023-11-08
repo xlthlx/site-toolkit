@@ -779,7 +779,7 @@ class Site_Toolkit_Options_Page {
 	 * @return void
 	 */
 	public function stk_media_callback() {
-		$this->stk_create_radio( 'stk_archives', 'media_redirect', __( 'Redirects the attachment pages to the homepage.', 'site-toolkit' ) );
+		$this->stk_create_radio( 'stk_archives', 'media_redirect', __( 'Redirects the attachment pages to the file url.', 'site-toolkit' ) );
 	}
 
 	/**

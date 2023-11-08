@@ -283,8 +283,8 @@ msgid "Removes the prefix in the archive title."
 msgstr "Rimuove il prefisso nel titolo dell'archivio."
 
 #: toolkit/admin/class-site-toolkit-options-page.php:799
-msgid "Redirects the attachment pages to the homepage."
-msgstr "Reindirizza le pagine degli allegati alla homepage."
+msgid "Redirects the attachment pages to the file url."
+msgstr "Reindirizza la pagina degli allegati al link del file."
 
 #: toolkit/admin/class-site-toolkit-options-page.php:810
 msgid "Redirect author"

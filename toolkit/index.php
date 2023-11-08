@@ -100,7 +100,7 @@ if ( isset( $stk_archives ) ) {
 					add_filter( 'get_the_archive_title', 'stk_remove_archive_title_prefix' );
 					break;
 				case 'media_redirect':
-					if ( ! get_option( 'wp_attachment_pages_enabled' ) ) {
+					if ( false === get_option( 'wp_attachment_pages_enabled' ) ) {
 						add_action( 'template_redirect', 'stk_attachment_pages_redirect' );
 					} else {
 						update_option( 'wp_attachment_pages_enabled', 0 );
@@ -116,8 +116,10 @@ if ( isset( $stk_archives ) ) {
 					add_action( 'template_redirect', 'stk_redirect_archives_tag' );
 					break;
 			}
-		} elseif ( ( 'media_redirect' === $key ) && get_option( 'wp_attachment_pages_enabled' ) ) {
-			update_option( 'wp_attachment_pages_enabled', 1 );
+		} elseif ( 'media_redirect' === $key ) {
+			if ( false !== get_option( 'wp_attachment_pages_enabled' ) ) {
+				update_option( 'wp_attachment_pages_enabled', 1 );
+			}
 		}
 	}
 }
