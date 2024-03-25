@@ -793,11 +793,11 @@ class Site_Toolkit_Options_Page {
 			<strong><?php esc_attr_e( 'Redirect author', 'site-toolkit' ); ?></strong><br/>
 			<label>
 				<input name="stk_archives[redirect_author]" type="radio"
-					   value="yes" <?php checked( 'yes', esc_attr( $this->options['redirect_author'] ) ); ?> /> <?php esc_attresc_attr_e( 'Yes', 'site-toolkit' ); ?>
+					   value="yes" <?php checked( 'yes', esc_attr( $this->options['redirect_author'] ) ); ?> /> <?php esc_attr_e( 'Yes', 'site-toolkit' ); ?>
 			</label>
 			<label>
 				<input name="stk_archives[redirect_author]" type="radio"
-					   value="no" <?php checked( 'no', esc_attr( $this->options['redirect_author'] ) ); ?> /> <?php esc_attresc_attr_e( 'No', 'site-toolkit' ); ?>
+					   value="no" <?php checked( 'no', esc_attr( $this->options['redirect_author'] ) ); ?> /> <?php esc_attr_e( 'No', 'site-toolkit' ); ?>
 			</label>
 		</p>
 		<br/>
@@ -805,11 +805,11 @@ class Site_Toolkit_Options_Page {
 			<strong><?php esc_attr_e( 'Redirect date', 'site-toolkit' ); ?></strong><br/>
 			<label>
 				<input name="stk_archives[redirect_date]" type="radio"
-					   value="yes" <?php checked( 'yes', esc_attr( $this->options['redirect_date'] ) ); ?> /> <?php esc_attresc_attr_e( 'Yes', 'site-toolkit' ); ?>
+					   value="yes" <?php checked( 'yes', esc_attr( $this->options['redirect_date'] ) ); ?> /> <?php esc_attr_e( 'Yes', 'site-toolkit' ); ?>
 			</label>
 			<label>
 				<input name="stk_archives[redirect_date]" type="radio"
-					   value="no" <?php checked( 'no', esc_attr( $this->options['redirect_date'] ) ); ?> /> <?php esc_attresc_attr_e( 'No', 'site-toolkit' ); ?>
+					   value="no" <?php checked( 'no', esc_attr( $this->options['redirect_date'] ) ); ?> /> <?php esc_attr_e( 'No', 'site-toolkit' ); ?>
 			</label>
 		</p>
 		<br/>
@@ -817,11 +817,11 @@ class Site_Toolkit_Options_Page {
 			<strong><?php esc_attr_e( 'Redirect tags', 'site-toolkit' ); ?></strong><br/>
 			<label>
 				<input name="stk_archives[redirect_tag]" type="radio"
-					   value="yes" <?php checked( 'yes', esc_attr( $this->options['redirect_tag'] ) ); ?> /> <?php esc_attresc_attr_e( 'Yes', 'site-toolkit' ); ?>
+					   value="yes" <?php checked( 'yes', esc_attr( $this->options['redirect_tag'] ) ); ?> /> <?php esc_attr_e( 'Yes', 'site-toolkit' ); ?>
 			</label>
 			<label>
 				<input name="stk_archives[redirect_tag]" type="radio"
-					   value="no" <?php checked( 'no', esc_attr( $this->options['redirect_tag'] ) ); ?> /> <?php esc_attresc_attr_e( 'No', 'site-toolkit' ); ?>
+					   value="no" <?php checked( 'no', esc_attr( $this->options['redirect_tag'] ) ); ?> /> <?php esc_attr_e( 'No', 'site-toolkit' ); ?>
 			</label>
 		</p>
 		<br/>
