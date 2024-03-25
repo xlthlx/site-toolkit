@@ -180,7 +180,7 @@ class Site_Toolkit_Options_Page {
 			<div id="<?php echo esc_attr( $id ); ?>" class="notice <?php echo esc_attr( $class ); ?> is-dismissible">
 				<p><strong><?php echo esc_html( $text ); ?></strong></p>
 				<button type="button" class="notice-dismiss">
-					<span class="screen-reader-text"><?php _e( 'Dismiss this notice.', 'site-toolkit' ); ?></span>
+					<span class="screen-reader-text"><?php esc_attr_e( 'Dismiss this notice.', 'site-toolkit' ); ?></span>
 				</button>
 			</div>
 			<?php
@@ -216,19 +216,19 @@ class Site_Toolkit_Options_Page {
 		<h2 style="margin-bottom:1em">Site Toolkit Options <?php echo ' - ' . esc_html( $label ); ?></h2>
 		<h2 class="nav-tab-wrapper">
 			<a href="?page=stk-settings&tab=general_options"
-			   class="nav-tab <?php echo 'general_options' === $active_tab ? 'nav-tab-active' : ''; ?>"><?php _e( 'Header', 'site-toolkit' ); ?></a>
+			   class="nav-tab <?php echo 'general_options' === $active_tab ? 'nav-tab-active' : ''; ?>"><?php esc_attr_e( 'Header', 'site-toolkit' ); ?></a>
 			<a href="?page=stk-settings&tab=seo_options"
-			   class="nav-tab <?php echo 'seo_options' === $active_tab ? 'nav-tab-active' : ''; ?>"><?php _e( 'SEO', 'site-toolkit' ); ?></a>
+			   class="nav-tab <?php echo 'seo_options' === $active_tab ? 'nav-tab-active' : ''; ?>"><?php esc_attr_e( 'SEO', 'site-toolkit' ); ?></a>
 			<a href="?page=stk-settings&tab=archives_options"
-			   class="nav-tab <?php echo 'archives_options' === $active_tab ? 'nav-tab-active' : ''; ?>"><?php _e( 'Archives', 'site-toolkit' ); ?></a>
+			   class="nav-tab <?php echo 'archives_options' === $active_tab ? 'nav-tab-active' : ''; ?>"><?php esc_attr_e( 'Archives', 'site-toolkit' ); ?></a>
 			<a href="?page=stk-settings&tab=dashboard_options"
-			   class="nav-tab <?php echo 'dashboard_options' === $active_tab ? 'nav-tab-active' : ''; ?>"><?php _e( 'Dashboard', 'site-toolkit' ); ?></a>
+			   class="nav-tab <?php echo 'dashboard_options' === $active_tab ? 'nav-tab-active' : ''; ?>"><?php esc_attr_e( 'Dashboard', 'site-toolkit' ); ?></a>
 			<a href="?page=stk-settings&tab=listing_options"
-			   class="nav-tab <?php echo 'listing_options' === $active_tab ? 'nav-tab-active' : ''; ?>"><?php _e( 'Listing', 'site-toolkit' ); ?></a>
+			   class="nav-tab <?php echo 'listing_options' === $active_tab ? 'nav-tab-active' : ''; ?>"><?php esc_attr_e( 'Listing', 'site-toolkit' ); ?></a>
 			<a href="?page=stk-settings&tab=login_options"
-			   class="nav-tab <?php echo 'login_options' === $active_tab ? 'nav-tab-active' : ''; ?>"><?php _e( 'Login', 'site-toolkit' ); ?></a>
+			   class="nav-tab <?php echo 'login_options' === $active_tab ? 'nav-tab-active' : ''; ?>"><?php esc_attr_e( 'Login', 'site-toolkit' ); ?></a>
 			<a href="?page=stk-settings&tab=uploads_options"
-			   class="nav-tab <?php echo 'uploads_options' === $active_tab ? 'nav-tab-active' : ''; ?>"><?php _e( 'Uploads', 'site-toolkit' ); ?></a>
+			   class="nav-tab <?php echo 'uploads_options' === $active_tab ? 'nav-tab-active' : ''; ?>"><?php esc_attr_e( 'Uploads', 'site-toolkit' ); ?></a>
 
 		</h2>
 
@@ -600,11 +600,11 @@ class Site_Toolkit_Options_Page {
 		?>
 		<label>
 			<input name="<?php echo esc_attr( $group ) . '[' . esc_attr( $name ) . ']'; ?>" type="radio"
-				   value="yes" <?php checked( 'yes', esc_attr( $this->options[ $name ] ) ); ?> /> <?php _e( 'Yes', 'site-toolkit' ); ?>
+				   value="yes" <?php checked( 'yes', esc_attr( $this->options[ $name ] ) ); ?> /> <?php esc_attr_e( 'Yes', 'site-toolkit' ); ?>
 		</label>
 		<label>
 			<input name="<?php echo esc_attr( $group ) . '[' . esc_attr( $name ) . ']'; ?>" type="radio"
-				   value="no" <?php checked( 'no', esc_attr( $this->options[ $name ] ) ); ?> /> <?php _e( 'No', 'site-toolkit' ); ?>
+				   value="no" <?php checked( 'no', esc_attr( $this->options[ $name ] ) ); ?> /> <?php esc_attr_e( 'No', 'site-toolkit' ); ?>
 		</label>
 		<br/>
 		<p class="description">
@@ -704,17 +704,17 @@ class Site_Toolkit_Options_Page {
 		echo '</p><br/>';
 
 		?>
-		<p><strong><?php _e( 'Context', 'site-toolkit' ); ?></strong>&nbsp;
+		<p><strong><?php esc_attr_e( 'Context', 'site-toolkit' ); ?></strong>&nbsp;
 			<label>
 				<input name="stk_dashboard[custom_widgets_context]" type="radio"
-					   value="normal" <?php checked( 'normal', esc_attr( $this->options['custom_widgets_context'] ) ); ?> /> <?php _e( 'Normal', 'site-toolkit' ); ?>
+					   value="normal" <?php checked( 'normal', esc_attr( $this->options['custom_widgets_context'] ) ); ?> /> <?php esc_attr_e( 'Normal', 'site-toolkit' ); ?>
 			</label>
 			<label>
 				<input name="stk_dashboard[custom_widgets_context]" type="radio"
-					   value="side" <?php checked( 'side', esc_attr( $this->options['custom_widgets_context'] ) ); ?> /> <?php _e( 'Side', 'site-toolkit' ); ?>
+					   value="side" <?php checked( 'side', esc_attr( $this->options['custom_widgets_context'] ) ); ?> /> <?php esc_attr_e( 'Side', 'site-toolkit' ); ?>
 			</label></p>
 		<p class="description">
-			<small><?php _e( 'You can create a custom text Dashboard widget.', 'site-toolkit' ); ?></small>
+			<small><?php esc_attr_e( 'You can create a custom text Dashboard widget.', 'site-toolkit' ); ?></small>
 		</p>
 		<?php
 	}
@@ -790,43 +790,43 @@ class Site_Toolkit_Options_Page {
 	public function stk_redirect_callback() {
 		?>
 		<p>
-			<strong><?php _e( 'Redirect author', 'site-toolkit' ); ?></strong><br/>
+			<strong><?php esc_attr_e( 'Redirect author', 'site-toolkit' ); ?></strong><br/>
 			<label>
 				<input name="stk_archives[redirect_author]" type="radio"
-					   value="yes" <?php checked( 'yes', esc_attr( $this->options['redirect_author'] ) ); ?> /> <?php _e( 'Yes', 'site-toolkit' ); ?>
+					   value="yes" <?php checked( 'yes', esc_attr( $this->options['redirect_author'] ) ); ?> /> <?php esc_attresc_attr_e( 'Yes', 'site-toolkit' ); ?>
 			</label>
 			<label>
 				<input name="stk_archives[redirect_author]" type="radio"
-					   value="no" <?php checked( 'no', esc_attr( $this->options['redirect_author'] ) ); ?> /> <?php _e( 'No', 'site-toolkit' ); ?>
+					   value="no" <?php checked( 'no', esc_attr( $this->options['redirect_author'] ) ); ?> /> <?php esc_attresc_attr_e( 'No', 'site-toolkit' ); ?>
 			</label>
 		</p>
 		<br/>
 		<p>
-			<strong><?php _e( 'Redirect date', 'site-toolkit' ); ?></strong><br/>
+			<strong><?php esc_attr_e( 'Redirect date', 'site-toolkit' ); ?></strong><br/>
 			<label>
 				<input name="stk_archives[redirect_date]" type="radio"
-					   value="yes" <?php checked( 'yes', esc_attr( $this->options['redirect_date'] ) ); ?> /> <?php _e( 'Yes', 'site-toolkit' ); ?>
+					   value="yes" <?php checked( 'yes', esc_attr( $this->options['redirect_date'] ) ); ?> /> <?php esc_attresc_attr_e( 'Yes', 'site-toolkit' ); ?>
 			</label>
 			<label>
 				<input name="stk_archives[redirect_date]" type="radio"
-					   value="no" <?php checked( 'no', esc_attr( $this->options['redirect_date'] ) ); ?> /> <?php _e( 'No', 'site-toolkit' ); ?>
+					   value="no" <?php checked( 'no', esc_attr( $this->options['redirect_date'] ) ); ?> /> <?php esc_attresc_attr_e( 'No', 'site-toolkit' ); ?>
 			</label>
 		</p>
 		<br/>
 		<p>
-			<strong><?php _e( 'Redirect tags', 'site-toolkit' ); ?></strong><br/>
+			<strong><?php esc_attr_e( 'Redirect tags', 'site-toolkit' ); ?></strong><br/>
 			<label>
 				<input name="stk_archives[redirect_tag]" type="radio"
-					   value="yes" <?php checked( 'yes', esc_attr( $this->options['redirect_tag'] ) ); ?> /> <?php _e( 'Yes', 'site-toolkit' ); ?>
+					   value="yes" <?php checked( 'yes', esc_attr( $this->options['redirect_tag'] ) ); ?> /> <?php esc_attresc_attr_e( 'Yes', 'site-toolkit' ); ?>
 			</label>
 			<label>
 				<input name="stk_archives[redirect_tag]" type="radio"
-					   value="no" <?php checked( 'no', esc_attr( $this->options['redirect_tag'] ) ); ?> /> <?php _e( 'No', 'site-toolkit' ); ?>
+					   value="no" <?php checked( 'no', esc_attr( $this->options['redirect_tag'] ) ); ?> /> <?php esc_attresc_attr_e( 'No', 'site-toolkit' ); ?>
 			</label>
 		</p>
 		<br/>
 		<p class="description">
-			<small><?php _e( 'Redirects authors archive, dates archive, tags archive to the homepage.', 'site-toolkit' ); ?></small>
+			<small><?php esc_attr_e( 'Redirects authors archive, dates archive, tags archive to the homepage.', 'site-toolkit' ); ?></small>
 		</p>
 		<?php
 	}
@@ -875,15 +875,15 @@ class Site_Toolkit_Options_Page {
 	public function stk_login_input_callback() {
 		echo '<p>';
 		if ( get_option( 'permalink_structure' ) ) {
-			echo '<code>' . trailingslashit( home_url() ) . '</code> <input type="text" name="stk_login[stk_login]" value="' . esc_html( $this->options['stk_login'] ) . '">' . ( $this->stk_use_trailing_slashes() ? ' <code>/</code>' : '' );
+			echo '<code>' . esc_url( trailingslashit( home_url() ) ). '</code> <input type="text" name="stk_login[stk_login]" value="' . esc_html( $this->options['stk_login'] ) . '">' . ( $this->stk_use_trailing_slashes() ? ' <code>/</code>' : '' );
 		} else {
-			echo '<code>' . trailingslashit( home_url() ) . '?</code> <input type="text" name="stk_login[stk_login]" value="' . esc_html( $this->options['stk_login'] ) . '">';
+			echo '<code>' . esc_url( trailingslashit( home_url() ) ) . '?</code> <input type="text" name="stk_login[stk_login]" value="' . esc_html( $this->options['stk_login'] ) . '">';
 		}
 		echo '</p>';
 		?>
 		<br/>
 		<p class="description">
-			<small><?php _e( 'You can choose your own URL instead of using the default WordPress URL.', 'site-toolkit' ); ?></small>
+			<small><?php esc_attr_e( 'You can choose your own URL instead of using the default WordPress URL.', 'site-toolkit' ); ?></small>
 		</p>
 		<?php
 	}
