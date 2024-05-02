@@ -122,42 +122,48 @@ class Site_Toolkit_Options_Page {
 				$_POST['stk_dashboard']['custom_widgets_content'] = $widgets_content;
 			}
 
-			$group = sanitize_text_field( $_POST['option_page'] );
+			$group = isset( $_POST['option_page'] ) ? sanitize_text_field( wp_unslash( $_POST['option_page'] ) ) : '';
 
 			switch ( $group ) {
 				case 'stk_general_group':
-					$this->stk_save_option( 'stk_general', array_map( 'sanitize_text_field', $_POST['stk_general'] ) );
+					$stk_general = isset( $_POST['stk_general'] ) ? sanitize_text_field( wp_unslash( $_POST['stk_general'] ) ) : array();
+					$this->stk_save_option( 'stk_general', $stk_general );
 					$this->stk_show_message( 'general_options', __( 'Header Options saved.', 'site-toolkit' ), 'message' );
 					break;
 				case 'stk_seo_group':
-					update_option( 'stk_seo', array_map( 'sanitize_text_field', $_POST['stk_seo'] ) );
+					$stk_seo = isset( $_POST['stk_seo'] ) ? sanitize_text_field( wp_unslash( $_POST['stk_seo'] ) ) : array();
+					update_option( 'stk_seo', $stk_seo );
 					$this->stk_show_message( 'seo_options', __( 'SEO Options saved.', 'site-toolkit' ), 'message' );
 					break;
 				case 'stk_archives_group':
-					update_option( 'stk_archives', array_map( 'sanitize_text_field', $_POST['stk_archives'] ) );
+					$stk_archives = isset( $_POST['stk_archives'] ) ? sanitize_text_field( wp_unslash( $_POST['stk_archives'] ) ) : array();
+					update_option( 'stk_archives', $stk_archives );
 					$this->stk_show_message( 'archives_options', __( 'Archives Options saved.', 'site-toolkit' ), 'message' );
 					break;
 				case 'stk_dashboard_group':
-					$this->stk_save_option( 'stk_dashboard', array_map( 'sanitize_text_field', $_POST['stk_dashboard'] ) );
+					$stk_dashboard = isset( $_POST['stk_dashboard'] ) ? sanitize_text_field( wp_unslash( $_POST['stk_dashboard'] ) ) : array();
+					$this->stk_save_option( 'stk_dashboard', $stk_dashboard );
 					$this->stk_show_message( 'dashboard_options', __( 'Dashboard Options saved.', 'site-toolkit' ), 'message' );
 					break;
 				case 'stk_listing_group':
-					update_option( 'stk_listing', array_map( 'sanitize_text_field', $_POST['stk_listing'] ) );
+					$stk_listing = isset( $_POST['stk_listing'] ) ? sanitize_text_field( wp_unslash( $_POST['stk_listing'] ) ) : array();
+					update_option( 'stk_listing', $stk_listing );
 					$this->stk_show_message( 'listing_options', __( 'Listing Options saved.', 'site-toolkit' ), 'message' );
 					break;
 				case 'stk_login_group':
-					update_option( 'stk_login', array_map( 'sanitize_text_field', $_POST['stk_login'] ) );
+					$stk_login = isset( $_POST['stk_login'] ) ? sanitize_text_field( wp_unslash( $_POST['stk_login'] ) ) : array();
+					update_option( 'stk_login', $stk_login );
 					$this->stk_show_message( 'login_options', __( 'Login Options saved.', 'site-toolkit' ), 'message' );
 					break;
 				case 'stk_uploads_group':
-					update_option( 'stk_uploads', array_map( 'sanitize_text_field', $_POST['stk_uploads'] ) );
+					$stk_uploads = isset( $_POST['stk_uploads'] ) ? sanitize_text_field( wp_unslash( $_POST['stk_uploads'] ) ) : array();
+					update_option( 'stk_uploads', $stk_uploads );
 					$this->stk_show_message( 'uploads_options', __( 'Uploads Options saved.', 'site-toolkit' ), 'message' );
 					break;
 			}
 		}
 
-
-		$active_tab = isset( $_GET['tab'] ) ? sanitize_title( $_GET['tab'] ) : 'general_options';
+		$active_tab = isset( $_GET['tab'] ) ? sanitize_title( wp_unslash( $_GET['tab'] ) ) : 'general_options';
 
 		echo '<div class="wrap option-stk_options">';
 
@@ -166,12 +172,12 @@ class Site_Toolkit_Options_Page {
 		$class = '';
 
 		if ( isset( $_REQUEST['message'] ) && ! empty( $_REQUEST['message'] ) ) {
-			$text  = sanitize_text_field( $_REQUEST['message'] );
+			$text  = sanitize_text_field( wp_unslash( $_REQUEST['message'] ) );
 			$id    = 'settings-success';
 			$class = 'notice-success';
 		}
 		if ( isset( $_REQUEST['error'] ) && ! empty( $_REQUEST['error'] ) ) {
-			$text  = sanitize_text_field( $_REQUEST['error'] );
+			$text  = sanitize_text_field( wp_unslash( $_REQUEST['error'] ) );
 			$id    = 'settings-error';
 			$class = 'notice-error';
 		}
@@ -359,7 +365,6 @@ class Site_Toolkit_Options_Page {
 			'settings_section'
 		);
 
-
 		add_settings_field(
 			'wp_version',
 			__( 'Remove WordPress Version', 'site-toolkit' ),
@@ -468,14 +473,6 @@ class Site_Toolkit_Options_Page {
 			'remove-title',
 			__( 'Remove Archive Title Prefix', 'site-toolkit' ),
 			array( $this, 'stk_title_callback' ),
-			'stk_archives_group',
-			'archives_section'
-		);
-
-		add_settings_field(
-			'media-redirect',
-			__( 'Redirect Attachments Pages', 'site-toolkit' ),
-			array( $this, 'stk_media_callback' ),
 			'stk_archives_group',
 			'archives_section'
 		);
@@ -774,15 +771,6 @@ class Site_Toolkit_Options_Page {
 	}
 
 	/**
-	 * Callback for media redirect.
-	 *
-	 * @return void
-	 */
-	public function stk_media_callback() {
-		$this->stk_create_radio( 'stk_archives', 'media_redirect', __( 'Redirects the attachment pages to the file url.', 'site-toolkit' ) );
-	}
-
-	/**
 	 * Callback for redirect.
 	 *
 	 * @return void
@@ -875,7 +863,7 @@ class Site_Toolkit_Options_Page {
 	public function stk_login_input_callback() {
 		echo '<p>';
 		if ( get_option( 'permalink_structure' ) ) {
-			echo '<code>' . esc_url( trailingslashit( home_url() ) ). '</code> <input type="text" name="stk_login[stk_login]" value="' . esc_html( $this->options['stk_login'] ) . '">' . ( $this->stk_use_trailing_slashes() ? ' <code>/</code>' : '' );
+			echo '<code>' . esc_url( trailingslashit( home_url() ) ) . '</code> <input type="text" name="stk_login[stk_login]" value="' . esc_html( $this->options['stk_login'] ) . '">' . ( $this->stk_use_trailing_slashes() ? ' <code>/</code>' : '' );
 		} else {
 			echo '<code>' . esc_url( trailingslashit( home_url() ) ) . '?</code> <input type="text" name="stk_login[stk_login]" value="' . esc_html( $this->options['stk_login'] ) . '">';
 		}

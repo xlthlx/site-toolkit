@@ -1,11 +1,11 @@
 === Site Toolkit ===
 Contributors: xlthlx
 Donate link: https://paypal.me/xlthlx
-Tags: archives,columns,emoji,header,tools,widgets
+Tags: archives,columns,emoji,header,tools
 Requires at least: 5.9
-Tested up to: 6.5
+Tested up to: 6.6
 Requires PHP: 7.4
-Stable tag: 1.0.4
+Stable tag: 1.1.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -31,8 +31,7 @@ It has seven sections to manage different functionalities:
 
 = Archives =
 1. Remove Archive Title Prefix: Removes the prefix in the archive title.
-2. Redirect Attachments Pages: Redirects the attachment pages to the file url.
-3. Redirect Archives: Redirects authors archive, dates archive, tags archive to the homepage.
+2. Redirect Archives: Redirects authors archive, dates archive, tags archive to the homepage.
 
 = Dashboard =
 1. Remove Dashboard Widgets: Removes all the Dashboard widgets.
@@ -75,6 +74,11 @@ Yes, just use the .POT file in the `languages` folder.
 7. Uploads
 
 == Changelog ==
+
+= 1.1.0 =
+* Removed functionality to redirect attachments pages: redirects the attachment pages to the file url.
+* Tested up to 6.6
+* Dependencies update
 
 = 1.0.4 =
 * Tested up to 6.5

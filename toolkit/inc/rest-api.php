@@ -34,7 +34,7 @@ function stk_disable_wp_rest_api( $error ) {
  *
  * @return void
  */
-function stk_disable_rest_api() { 
+function stk_disable_rest_api() {
 	remove_action( 'template_redirect', 'rest_output_link_header', 11 );
 	remove_action( 'wp_head', 'rest_output_link_wp_head' );
 	remove_action( 'xmlrpc_rsd_apis', 'rest_output_rsd' );

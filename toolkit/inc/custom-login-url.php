@@ -39,9 +39,9 @@ function stk_user_trailingslashit( $string ) {
 function stk_plugins_loaded() {
 	global $pagenow,$stk_url_login,$wp_login_php;
 
-	$request = parse_url( esc_url_raw( $_SERVER['REQUEST_URI'] ) );
+	$request = isset( $_SERVER['REQUEST_URI'] ) ? wp_parse_url( esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ) ) : '';
 
-	if ( ! is_admin() && ( strpos( $_SERVER['REQUEST_URI'], 'wp-login.php' ) !== false || ( isset( $request['path'] ) && untrailingslashit( $request['path'] ) === site_url( 'wp-login', 'relative' ) ) ) ) {
+	if ( ! is_admin() && ( strpos( esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ), 'wp-login.php' ) !== false || ( isset( $request['path'] ) && untrailingslashit( $request['path'] ) === site_url( 'wp-login', 'relative' ) ) ) ) {
 		$wp_login_php           = true;
 		$_SERVER['REQUEST_URI'] = stk_user_trailingslashit(
 			'/' . str_repeat(
@@ -77,25 +77,25 @@ function stk_wp_loaded() {
 		exit();
 	}
 
-	$request = parse_url( esc_url_raw( $_SERVER['REQUEST_URI'] ) );
+	$request = isset( $_SERVER['REQUEST_URI'] ) ? wp_parse_url( esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ) ) : '';
 
 	if ( 'wp-login.php' === $pagenow && stk_user_trailingslashit( $request['path'] ) !== $request['path'] && get_option( 'permalink_structure' ) ) {
-		wp_safe_redirect( stk_user_trailingslashit( stk_new_login_url() ) . ( ! empty( $_SERVER['QUERY_STRING'] ) ? '?' . esc_url_raw( $_SERVER['QUERY_STRING'] ) : '' ) );
+		wp_safe_redirect( stk_user_trailingslashit( stk_new_login_url() ) . ( ! empty( $_SERVER['QUERY_STRING'] ) ? '?' . esc_url_raw( wp_unslash( $_SERVER['QUERY_STRING'] ) ) : '' ) );
 		die;
 	}
 
 	if ( $wp_login_php ) {
 		$referer   = wp_get_referer();
-		$i_referer = parse_url( $referer );
+		$i_referer = wp_parse_url( $referer );
 		if ( isset( $i_referer['query'] ) && false !== strpos( $referer, 'wp-activate.php' ) ) {
 			$referer = (array) $referer;
 			parse_str( $referer['query'], $referer );
 
 			$result = wpmu_activate_signup( $referer['key'] );
-			if ( ! empty( $referer['key'] ) && is_wp_error( $result ) && ( $result->get_error_code() === 'already_active' 
-				|| $result->get_error_code() === 'blog_taken' ) 
+			if ( ! empty( $referer['key'] ) && is_wp_error( $result ) && ( $result->get_error_code() === 'already_active'
+				|| $result->get_error_code() === 'blog_taken' )
 			) {
-				wp_safe_redirect( stk_new_login_url() . ( ! empty( $_SERVER['QUERY_STRING'] ) ? '?' . esc_url_raw( $_SERVER['QUERY_STRING'] ) : '' ) );
+				wp_safe_redirect( stk_new_login_url() . ( ! empty( $_SERVER['QUERY_STRING'] ) ? '?' . esc_url_raw( wp_unslash( $_SERVER['QUERY_STRING'] ) ) : '' ) );
 				die;
 			}
 		}
@@ -126,7 +126,7 @@ function stk_wp_template_loader() {
 
 	wp();
 
-	if ( stk_user_trailingslashit( str_repeat( '-/', 10 ) ) === $_SERVER['REQUEST_URI'] ) {
+	if ( isset( $_SERVER['REQUEST_URI'] ) && stk_user_trailingslashit( str_repeat( '-/', 10 ) ) === $_SERVER['REQUEST_URI'] ) {
 		$_SERVER['REQUEST_URI'] = stk_user_trailingslashit( '/wp-login-php/' );
 	}
 
@@ -204,7 +204,9 @@ function stk_new_login_url( $scheme = null ) {
 		);
 	}
 
-	return home_url( '/', $scheme ) . '?' . esc_url_raw( $_GET['stk_login'] );
+	if ( isset( $_GET['stk_login'] ) ) {
+		return home_url( '/', $scheme ) . '?' . esc_url_raw( wp_unslash( $_GET['stk_login'] ) );
+	}
 }
 
 /**
@@ -232,7 +234,7 @@ function stk_welcome_email( $value ) {
  *
  * @return array
  */
-function stk_admin_bar_body_class( $wp_classes, $extra_classes ) { 
+function stk_admin_bar_body_class( $wp_classes, $extra_classes ) {
 	if ( ( is_404() ) && ( ! is_user_logged_in() ) ) {
 		$wp_nobar_classes = array_diff( $wp_classes, array( 'admin-bar' ) );
 

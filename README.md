@@ -1,15 +1,15 @@
 # ![Site Toolkit](https://ps.w.org/site-toolkit/assets/banner-772x250.png "WordPress Plugin")
 
-[![Version](https://img.shields.io/badge/version-1.0.4-blueviolet)](https://plugintests.com/plugins/wporg/site-toolkit/latest) [![License](https://img.shields.io/badge/license-GPL_v3%2B-blueviolet)](https://github.com/xlthlx/site-toolkit/blob/main/LICENSE)
-![WordPress Plugin Downloads](https://img.shields.io/wordpress/plugin/dt/site-toolkit?color=blueviolet) [![Maintainability](https://api.codeclimate.com/v1/badges/98be6e8babad3183eef5/maintainability)](https://codeclimate.com/github/xlthlx/site-toolkit/maintainability)
+[![Version](https://img.shields.io/badge/version-1.1.0-blueviolet)](https://plugintests.com/plugins/wporg/site-toolkit/latest) [![License](https://img.shields.io/badge/license-GPL_v3%2B-blueviolet)](https://github.com/xlthlx/site-toolkit/blob/main/LICENSE)
+![WordPress Plugin Downloads](https://img.shields.io/wordpress/plugin/dt/site-toolkit?color=blueviolet) [![WP compatibility](https://plugintests.com/plugins/wporg/site-toolkit/wp-badge.svg)](https://plugintests.com/plugins/wporg/site-toolkit/latest) [![PHP compatibility](https://plugintests.com/plugins/wporg/site-toolkit/php-badge.svg)](https://plugintests.com/plugins/wporg/site-toolkit/latest)
 
 **Contributors:** xlthlx \
 **Donate link:** https://paypal.me/xlthlx \
-**Tags:** archives,columns,emoji,header,tools,widgets \
+**Tags:** archives,columns,emoji,header,tools \
 **Requires at least:** 5.9 \
-**Tested up to:** 6.5 \
+**Tested up to:** 6.6 \
 **Requires PHP:** 7.4 \
-**Stable tag:** 1.0.4 \
+**Stable tag:** 1.1.0 \
 **License:** GPLv3 or later \
 **License URI:** https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -38,8 +38,7 @@ It has seven sections to manage different functionalities:
 ### Archives
 
 1. Remove Archive Title Prefix: Removes the prefix in the archive title.
-2. Redirect Attachments Pages: Redirects the attachment pages to the file url.
-3. Redirect Archives: Redirects authors archive, dates archive, tags archive to the homepage.
+2. Redirect Archives: Redirects authors archive, dates archive, tags archive to the homepage.
 
 ### Dashboard
 
@@ -107,6 +106,12 @@ Yes, just use the .POT file in the `languages` folder.
 
 
 ## Changelog
+
+### 1.1.0
+
+* Removed functionality to redirect attachments pages: redirects the attachment pages to the file url.
+* Tested up to 6.6
+* Dependencies update
 
 ### 1.0.4
 

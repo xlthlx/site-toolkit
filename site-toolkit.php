@@ -13,7 +13,7 @@
  * Plugin Name:       Site Toolkit
  * Plugin URI:        https://wordpress.org/plugins/site-toolkit/
  * Description:       Sets of tools for WordPress admin and frontend.
- * Version:           1.0.4
+ * Version:           1.1.0
  * Requires at least: 5.9
  * Requires PHP:      7.4
  * Author:            xlthlx
@@ -60,7 +60,6 @@ $defaults = array(
 	),
 	'stk_archives'  => array(
 		'remove_title'    => 'yes',
-		'media_redirect'  => 'yes',
 		'redirect_author' => 'no',
 		'redirect_date'   => 'no',
 		'redirect_tag'    => 'no',

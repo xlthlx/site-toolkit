@@ -17,7 +17,7 @@ function stk_add_dashboard_widgets() {
 		'stk_dashboard_widget_function',
 		'dashboard',
 		sanitize_key( $stk_dashboard['custom_widgets_context'] ),
-		'high' 
+		'high'
 	);
 }
 

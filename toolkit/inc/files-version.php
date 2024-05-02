@@ -12,7 +12,7 @@
  *
  * @return string
  */
-function stk_change_version_from_style_js( $src ) { 
+function stk_change_version_from_style_js( $src ) {
 	if ( ! is_admin() ) {
 
 		$clean_src  = $src ? esc_url( remove_query_arg( 'ver', $src ) ) : false;

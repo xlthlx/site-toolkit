@@ -12,7 +12,7 @@
  *
  * @return array The file information with the cleaned or original filename.
  */
-function stk_upload_filter( $file ) { 
+function stk_upload_filter( $file ) {
 	$original_filename = pathinfo( $file['name'] );
 	set_transient(
 		'_clean_image_filenames_original_filename',
@@ -33,7 +33,6 @@ function stk_upload_filter( $file ) {
 	$new_filename = str_replace( $input, $output, $new_filename );
 	$file['name'] = sanitize_title( $new_filename ) . '.' . $path['extension'];
 
-
 	return $file;
 }
 
@@ -44,7 +43,7 @@ function stk_upload_filter( $file ) {
  *
  * @return void
  */
-function stk_update_attachment_title( $attachment_id ) { 
+function stk_update_attachment_title( $attachment_id ) {
 	$original_filename = get_transient( '_clean_image_filenames_original_filename' );
 
 	if ( $original_filename ) {

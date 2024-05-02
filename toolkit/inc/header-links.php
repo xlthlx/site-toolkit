@@ -31,7 +31,7 @@ function stk_remove_comments_style() {
  *
  * @return void
  */
-function stk_disable_links() { 
+function stk_disable_links() {
 	remove_action( 'wp_head', 'adjacent_posts_rel_link' );
 	remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head' );
 	remove_action( 'template_redirect', 'wp_shortlink_header', 11 );

@@ -24,5 +24,5 @@ function stk_disable_rss_feed() {
  */
 function stk_remove_feed_comments() {
 	$pattern = '/.*' . preg_quote( esc_url( get_feed_link( 'comments_' . get_default_feed() ) ), '/' ) . '.*[\r\n]+/';
-	echo preg_replace( $pattern, '', ob_get_clean() );
+	echo esc_url_raw( preg_replace( $pattern, '', ob_get_clean() ) );
 }

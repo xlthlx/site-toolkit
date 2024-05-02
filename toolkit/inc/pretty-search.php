@@ -18,7 +18,7 @@ function stk_search_url_rewrite() {
 
 	$search_base = $wp_rewrite->search_base;
 	$needle      = '/' . $search_base . '/';
-	$uri         = esc_url_raw( $_SERVER['REQUEST_URI'] );
+	$uri         = isset( $_SERVER['REQUEST_URI'] ) ? esc_url_raw( wp_unslash( $_SERVER['REQUEST_URI'] ) ) : '';
 
 	if ( is_search() && strpos( $uri, $needle ) === false && strpos( $uri, '&' ) === false ) {
 		wp_redirect( get_search_link() );

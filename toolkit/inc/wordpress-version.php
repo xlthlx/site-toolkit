@@ -39,7 +39,7 @@ function stk_replace_meta_generators( $html ) {
  *
  * @return void
  */
-function stk_remove_wordpress_version() { 
+function stk_remove_wordpress_version() {
 	remove_action( 'wp_head', 'wp_generator' );
 	add_filter( 'the_generator', '__return_empty_string' );
 
