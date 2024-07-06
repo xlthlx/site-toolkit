@@ -29,12 +29,14 @@ function stk_add_image_alt( $content ) {
 
 				preg_match_all( '/<img [^>]*src="([^"]+)"[^>]*>/m', $value, $urls, PREG_SET_ORDER );
 
+				// @codingStandardsIgnoreStart
 				$attachment_id = $wpdb->get_col(
 					$wpdb->prepare(
 						"SELECT ID FROM $wpdb->posts WHERE guid=%s;",
 						$urls[0][1]
 					)
 				);
+				// @codingStandardsIgnoreEnd
 				$attachment    = get_post( $attachment_id[0] );
 				$alt           = get_post_meta( $attachment->ID, '_wp_attachment_image_alt', true );
 				$title         = $attachment->post_title;

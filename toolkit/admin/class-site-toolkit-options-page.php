@@ -126,37 +126,58 @@ class Site_Toolkit_Options_Page {
 
 			switch ( $group ) {
 				case 'stk_general_group':
-					$stk_general = isset( $_POST['stk_general'] ) ? sanitize_text_field( wp_unslash( $_POST['stk_general'] ) ) : array();
+					// @codingStandardsIgnoreStart
+					$stk_general = isset( $_POST['stk_general'] ) ? $_POST['stk_general'] : array();
+					// @codingStandardsIgnoreEnd
+					$stk_general = array_map( 'sanitize_text_field', array_map( 'wp_unslash', $stk_general ) );
 					$this->stk_save_option( 'stk_general', $stk_general );
 					$this->stk_show_message( 'general_options', __( 'Header Options saved.', 'site-toolkit' ), 'message' );
 					break;
 				case 'stk_seo_group':
-					$stk_seo = isset( $_POST['stk_seo'] ) ? sanitize_text_field( wp_unslash( $_POST['stk_seo'] ) ) : array();
+					// @codingStandardsIgnoreStart
+					$stk_seo = isset( $_POST['stk_seo'] ) ? $_POST['stk_seo'] : array();
+					// @codingStandardsIgnoreEnd
+					$stk_seo = array_map( 'sanitize_text_field', array_map( 'wp_unslash', $stk_seo ) );
 					update_option( 'stk_seo', $stk_seo );
 					$this->stk_show_message( 'seo_options', __( 'SEO Options saved.', 'site-toolkit' ), 'message' );
 					break;
 				case 'stk_archives_group':
-					$stk_archives = isset( $_POST['stk_archives'] ) ? sanitize_text_field( wp_unslash( $_POST['stk_archives'] ) ) : array();
+					// @codingStandardsIgnoreStart
+					$stk_archives = isset( $_POST['stk_archives'] ) ? $_POST['stk_archives'] : array();
+					// @codingStandardsIgnoreEnd
+					$stk_archives = array_map( 'sanitize_text_field', array_map( 'wp_unslash', $stk_archives ) );
 					update_option( 'stk_archives', $stk_archives );
 					$this->stk_show_message( 'archives_options', __( 'Archives Options saved.', 'site-toolkit' ), 'message' );
 					break;
 				case 'stk_dashboard_group':
-					$stk_dashboard = isset( $_POST['stk_dashboard'] ) ? sanitize_text_field( wp_unslash( $_POST['stk_dashboard'] ) ) : array();
+					// @codingStandardsIgnoreStart
+					$stk_dashboard = isset( $_POST['stk_dashboard'] ) ? $_POST['stk_dashboard'] : array();
+					// @codingStandardsIgnoreEnd
+					$stk_dashboard = array_map( 'sanitize_text_field', array_map( 'wp_unslash', $stk_dashboard ) );
 					$this->stk_save_option( 'stk_dashboard', $stk_dashboard );
 					$this->stk_show_message( 'dashboard_options', __( 'Dashboard Options saved.', 'site-toolkit' ), 'message' );
 					break;
 				case 'stk_listing_group':
-					$stk_listing = isset( $_POST['stk_listing'] ) ? sanitize_text_field( wp_unslash( $_POST['stk_listing'] ) ) : array();
+					// @codingStandardsIgnoreStart
+					$stk_listing = isset( $_POST['stk_listing'] ) ? $_POST['stk_listing'] : array();
+					// @codingStandardsIgnoreEnd
+					$stk_listing = array_map( 'sanitize_text_field', array_map( 'wp_unslash', $stk_listing ) );
 					update_option( 'stk_listing', $stk_listing );
 					$this->stk_show_message( 'listing_options', __( 'Listing Options saved.', 'site-toolkit' ), 'message' );
 					break;
 				case 'stk_login_group':
-					$stk_login = isset( $_POST['stk_login'] ) ? sanitize_text_field( wp_unslash( $_POST['stk_login'] ) ) : array();
+					// @codingStandardsIgnoreStart
+					$stk_login = isset( $_POST['stk_login'] ) ? $_POST['stk_login'] : array();
+					// @codingStandardsIgnoreEnd
+					$stk_login = array_map( 'sanitize_text_field', array_map( 'wp_unslash', $stk_login ) );
 					update_option( 'stk_login', $stk_login );
 					$this->stk_show_message( 'login_options', __( 'Login Options saved.', 'site-toolkit' ), 'message' );
 					break;
 				case 'stk_uploads_group':
-					$stk_uploads = isset( $_POST['stk_uploads'] ) ? sanitize_text_field( wp_unslash( $_POST['stk_uploads'] ) ) : array();
+					// @codingStandardsIgnoreStart
+					$stk_uploads = isset( $_POST['stk_uploads'] ) ? $_POST['stk_uploads'] : array();
+					// @codingStandardsIgnoreEnd
+					$stk_uploads = array_map( 'sanitize_text_field', array_map( 'wp_unslash', $stk_uploads ) );
 					update_option( 'stk_uploads', $stk_uploads );
 					$this->stk_show_message( 'uploads_options', __( 'Uploads Options saved.', 'site-toolkit' ), 'message' );
 					break;

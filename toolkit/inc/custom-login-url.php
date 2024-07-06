@@ -51,11 +51,9 @@ function stk_plugins_loaded() {
 		);
      // @codingStandardsIgnoreStart
      $pagenow = 'index.php';
-     // @codingStandardsIgnoreEnd
 
 	} elseif ( ( ! get_option( 'permalink_structure' ) && isset( $_GET['stk_login'] ) && empty( $_GET['stk_login'] ) ) || ( isset( $request['path'] ) && untrailingslashit( $request['path'] ) === home_url( $stk_url_login, 'relative' ) ) ) {
 
-     // @codingStandardsIgnoreStart
      $pagenow = 'wp-login.php';
      // @codingStandardsIgnoreEnd
 	}
@@ -204,9 +202,11 @@ function stk_new_login_url( $scheme = null ) {
 		);
 	}
 
+	// @codingStandardsIgnoreStart
 	if ( isset( $_GET['stk_login'] ) ) {
 		return home_url( '/', $scheme ) . '?' . esc_url_raw( wp_unslash( $_GET['stk_login'] ) );
 	}
+	// @codingStandardsIgnoreEnd
 }
 
 /**
