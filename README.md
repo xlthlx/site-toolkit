@@ -78,31 +78,31 @@ Yes, just use the .POT file in the `languages` folder.
 
 ### 1. Header
 
-![Header](https://ps.w.org/site-toolkit/assets/screenshot-1.png)
+![Header](assets/screenshot-1.png)
 
 ### 2. SEO
 
-![SEO](https://ps.w.org/site-toolkit/assets/screenshot-2.png)
+![SEO](assets/screenshot-2.png)
 
 ### 3. Archives
 
-![Archives](https://ps.w.org/site-toolkit/assets/screenshot-3.png)
+![Archives](assets/screenshot-3.png)
 
 ### 4. Dashboard
 
-![Dashboard](https://ps.w.org/site-toolkit/assets/screenshot-4.png)
+![Dashboard](assets/screenshot-4.png)
 
 ### 5. Listing
 
-![Listing](https://ps.w.org/site-toolkit/assets/screenshot-5.png)
+![Listing](assets/screenshot-5.png)
 
 ### 6. Login
 
-![Login](https://ps.w.org/site-toolkit/assets/screenshot-6.png)
+![Login](assets/screenshot-6.png)
 
 ### 7. Uploads
 
-![Uploads](https://ps.w.org/site-toolkit/assets/screenshot-7.png)
+![Uploads](assets/screenshot-7.png)
 
 
 ## Changelog
