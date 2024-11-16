@@ -1,5 +1,13 @@
 {
+  "name": "site-toolkit",
+  "description": "Plugin with a set of tools for WordPress admin and frontend.",
+  "author": "xlthlx",
+  "keywords": [
+    "WordPress",
+    "Plugin"
+  ],
+  "homepage": "https://github.com/xlthlx/site-toolkit",
   "devDependencies": {
-    "@wordpress/env": "^9.6.0"
+    "@wordpress/env": "^10.11.0"
   }
 }

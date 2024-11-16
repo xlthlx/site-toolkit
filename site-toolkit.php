@@ -7,13 +7,13 @@
  * @author    xlthlx <xlthlx@gmail.com>
  * @copyright 2022 xlthlx (email: xlthlx at gmail.com)
  * @license   https://www.gnu.org/licenses/gpl-3.0.html GPL 3
- * @link      https://wordpress.org/plugins/site-toolkit/
+ * @link      https://github.com/xlthlx/site-toolkit/
  *
  * @wordpress-plugin
  * Plugin Name:       Site Toolkit
  * Plugin URI:        https://wordpress.org/plugins/site-toolkit/
  * Description:       Sets of tools for WordPress admin and frontend.
- * Version:           1.1.0
+ * Version:           1.1.1
  * Requires at least: 5.9
  * Requires PHP:      7.4
  * Author:            xlthlx

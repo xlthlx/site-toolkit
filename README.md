@@ -1,15 +1,15 @@
 # ![Site Toolkit](https://ps.w.org/site-toolkit/assets/banner-772x250.png "WordPress Plugin")
 
-[![Version](https://img.shields.io/badge/version-1.1.0-blueviolet)](https://plugintests.com/plugins/wporg/site-toolkit/latest) [![License](https://img.shields.io/badge/license-GPL_v3%2B-blueviolet)](https://github.com/xlthlx/site-toolkit/blob/main/LICENSE)
+[![Version](https://img.shields.io/badge/version-1.1.1-blueviolet)](https://plugintests.com/plugins/wporg/site-toolkit/latest) [![License](https://img.shields.io/badge/license-GPL_v3%2B-blueviolet)](https://github.com/xlthlx/site-toolkit/blob/main/LICENSE)
 ![WordPress Plugin Downloads](https://img.shields.io/wordpress/plugin/dt/site-toolkit?color=blueviolet) [![WP compatibility](https://plugintests.com/plugins/wporg/site-toolkit/wp-badge.svg)](https://plugintests.com/plugins/wporg/site-toolkit/latest) [![PHP compatibility](https://plugintests.com/plugins/wporg/site-toolkit/php-badge.svg)](https://plugintests.com/plugins/wporg/site-toolkit/latest)
 
 **Contributors:** xlthlx \
 **Donate link:** https://paypal.me/xlthlx \
 **Tags:** archives,columns,emoji,header,tools \
 **Requires at least:** 5.9 \
-**Tested up to:** 6.6 \
+**Tested up to:** 6.7 \
 **Requires PHP:** 7.4 \
-**Stable tag:** 1.1.0 \
+**Stable tag:** 1.1.1 \
 **License:** GPLv3 or later \
 **License URI:** https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -106,6 +106,12 @@ Yes, just use the .POT file in the `languages` folder.
 
 
 ## Changelog
+
+### 1.1.1
+
+* Tested up to 6.7
+* Dependencies update
+* Bugfix on removes RSS feed links
 
 ### 1.1.0
 

@@ -3,9 +3,9 @@ Contributors: xlthlx
 Donate link: https://paypal.me/xlthlx
 Tags: archives,columns,emoji,header,tools
 Requires at least: 5.9
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -74,6 +74,11 @@ Yes, just use the .POT file in the `languages` folder.
 7. Uploads
 
 == Changelog ==
+
+= 1.1.1 =
+* Tested up to 6.7
+* Dependencies update
+* Bugfix on removes RSS feed links
 
 = 1.1.0 =
 * Removed functionality to redirect attachments pages: redirects the attachment pages to the file url.
