@@ -1,18 +1,20 @@
 # Files to exclude from the distribution
 
+.circleci
+.circleci/config.yml
 .distignore
 .git
 .gitignore
+.wp-env.json
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+README.md
+SECURITY.md
 bin
 build
-.circleci
-.circleci/config.yml
 composer.json
-composer.lock
 package.json
-package-lock.json
-README.md
-.wp-env.json
+phpcs.xml.dist
 
 # Ignore packaged files
 *.7z
@@ -22,15 +24,15 @@ README.md
 *.iso
 *.jar
 *.rar
-*.tar
-*.zip
 *.sql
+*.tar
 *.tar.gz
+*.zip
 
 # Ignore OS generated files
-ehthumbs.db
-Thumbs.db
 .DS_Store
+Thumbs.db
+ehthumbs.db
 
 # Ignore log files
 *.log
@@ -38,10 +40,5 @@ Thumbs.db
 # Ignore lock files
 *.lock
 
-# Build Tools
-.idea
-node_modules
-vendor
-
 # Project specific
-wp-content
+/assets

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/wp-admin/admin.php?page=stk-settings",
+  "login": true,
+  "preferredVersions": {
+    "php": "8.0",
+    "wp": "latest"
+  },
+  "siteOptions": {
+    "blogname": "Site Toolkit",
+    "blogdescription": "Site Toolkit is a WordPress plugin that gives you a lot of options to improve your blog/website."
+  },
+  "plugins": [
+    "site-toolkit"
+  ]
+}
