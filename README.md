@@ -1,6 +1,6 @@
 # ![Site Toolkit](https://ps.w.org/site-toolkit/assets/banner-772x250.png "WordPress Plugin")
 
-[![Version](https://img.shields.io/badge/version-1.1.1-blueviolet)](https://plugintests.com/plugins/wporg/site-toolkit/latest) [![License](https://img.shields.io/badge/license-GPL_v3%2B-blueviolet)](https://github.com/xlthlx/site-toolkit/blob/main/LICENSE)
+[![Version](https://img.shields.io/badge/version-1.1.2-blueviolet)](https://plugintests.com/plugins/wporg/site-toolkit/latest) [![License](https://img.shields.io/badge/license-GPL_v3%2B-blueviolet)](https://github.com/xlthlx/site-toolkit/blob/main/LICENSE)
 ![WordPress Plugin Downloads](https://img.shields.io/wordpress/plugin/dt/site-toolkit?color=blueviolet) [![WP compatibility](https://plugintests.com/plugins/wporg/site-toolkit/wp-badge.svg)](https://plugintests.com/plugins/wporg/site-toolkit/latest) [![PHP compatibility](https://plugintests.com/plugins/wporg/site-toolkit/php-badge.svg)](https://plugintests.com/plugins/wporg/site-toolkit/latest)
 
 [![Preview](https://img.shields.io/badge/live-preview-blueviolet?logo=wordpress&style=for-the-badge)](https://playground.wordpress.net/?mode=seamless#{%22$schema%22:%22https://playground.wordpress.net/blueprint-schema.json%22,%22landingPage%22:%22/wp-admin/admin.php?page=stk-settings%22,%22login%22:true,%22preferredVersions%22:{%22php%22:%228.0%22,%22wp%22:%22latest%22},%22siteOptions%22:{%22blogname%22:%22Site%20Toolkit%22,%22blogdescription%22:%22Site%20Toolkit%20is%20a%20WordPress%20plugin%20that%20gives%20you%20a%20lot%20of%20options%20to%20improve%20your%20blog/website.%22},%22plugins%22:[%22site-toolkit%22]})
@@ -11,7 +11,7 @@
 **Requires at least:** 5.9 \
 **Tested up to:** 6.7 \
 **Requires PHP:** 7.4 \
-**Stable tag:** 1.1.1 \
+**Stable tag:** 1.1.2 \
 **License:** GPLv3 or later \
 **License URI:** https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -108,6 +108,11 @@ Yes, just use the .POT file in the `languages` folder.
 
 
 ## Changelog
+
+### 1.1.2
+
+* Dependencies update
+* Added blueprint.json
 
 ### 1.1.1
 

@@ -37,10 +37,10 @@ function stk_add_image_alt( $content ) {
 					)
 				);
 				// @codingStandardsIgnoreEnd
-				$attachment    = get_post( $attachment_id[0] );
-				$alt           = get_post_meta( $attachment->ID, '_wp_attachment_image_alt', true );
-				$title         = $attachment->post_title;
-				$post_title    = get_post_field( 'post_title', $post->ID );
+				$attachment = get_post( $attachment_id[0] );
+				$alt        = get_post_meta( $attachment->ID, '_wp_attachment_image_alt', true );
+				$title      = $attachment->post_title;
+				$post_title = get_post_field( 'post_title', $post->ID );
 
 				$new_img = str_replace( '<img', '<img alt="' . $post_title . '"', $images[0][ $index ] );
 
