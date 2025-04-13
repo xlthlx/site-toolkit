@@ -22,9 +22,10 @@
     "wpreadme2markdown/wp2md": "^4.1.2"
   },
   "scripts": {
+    "check": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs -s . --standard=PHPCompatibility --runtime-set testVersion 8.4 --ignore=vendor/*,node_modules/*,inc/cmb2/*,wp-content/* --extensions=php",
     "lint:wpcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs --ignore=vendor/*,node_modules/*,inc/cmb2/*,wp-content/* --extensions=php . -n -v --report-file=report.txt",
     "lint:wpcs:fix": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf --ignore=vendor/*,node_modules/*,inc/cmb2/*,wp-content/* --extensions=php .",
-    "lint:php": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor .",
+    "lint:php": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor --exclude inc/cmb2 .",
     "make:pot": "wp i18n make-pot . languages/site-toolkit.pot",
     "readme": "@php ./vendor/wpreadme2markdown/wp2md/bin/wp2md -i readme.txt -o README.md"
   },

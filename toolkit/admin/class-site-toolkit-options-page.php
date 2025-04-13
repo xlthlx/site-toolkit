@@ -13,23 +13,23 @@ class Site_Toolkit_Options_Page {
 	/**
 	 * A static reference to track the single instance of this class.
 	 *
-	 * @var Site_Toolkit_Options_Page
+	 * @var object|null
 	 */
-	private static $instance;
+	private static ?object $instance = null;
 
 	/**
 	 * Holds the values to be used in the fields callbacks.
 	 *
 	 * @var array
 	 */
-	private $options;
+	private array $options;
 
 	/**
 	 * Holds the default values to be used in the fields callbacks.
 	 *
 	 * @var array
 	 */
-	private $defaults;
+	private array $defaults;
 
 	/**
 	 * WpToolkitOptionsPage constructor.
@@ -63,7 +63,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return Site_Toolkit_Options_Page
 	 */
-	public function stk_set_defaults( $defaults ) {
+	public function stk_set_defaults( $defaults ): Site_Toolkit_Options_Page {
 		$this->defaults = $defaults;
 
 		return $this;
@@ -71,8 +71,10 @@ class Site_Toolkit_Options_Page {
 
 	/**
 	 * Add menu page.
+	 *
+	 * @return void
 	 */
-	public function stk_add_menu_page() {
+	public function stk_add_menu_page(): void {
 
 		// @codingStandardsIgnoreStart
 		add_menu_page(
@@ -91,7 +93,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_output_buffer() {
+	public function stk_output_buffer(): void {
 		ob_start();
 	}
 
@@ -103,7 +105,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_save_option( $option_name, $value ) {
+	public function stk_save_option( $option_name, $value ): void {
 		if ( false !== get_option( $option_name ) ) {
 			update_option( $option_name, $value );
 		} else {
@@ -113,8 +115,10 @@ class Site_Toolkit_Options_Page {
 
 	/**
 	 * Options page callback.
+	 *
+	 * @return void
 	 */
-	public function stk_options_display() {
+	public function stk_options_display(): void {
 		if ( ! empty( $_POST ) && check_admin_referer( 'stk_update', 'stk_update' ) ) {
 
 			if ( isset( $_POST['widgetscontent'] ) ) {
@@ -192,12 +196,12 @@ class Site_Toolkit_Options_Page {
 		$id    = '';
 		$class = '';
 
-		if ( isset( $_REQUEST['message'] ) && ! empty( $_REQUEST['message'] ) ) {
+		if ( ! empty( $_REQUEST['message'] ) ) {
 			$text  = sanitize_text_field( wp_unslash( $_REQUEST['message'] ) );
 			$id    = 'settings-success';
 			$class = 'notice-success';
 		}
-		if ( isset( $_REQUEST['error'] ) && ! empty( $_REQUEST['error'] ) ) {
+		if ( ! empty( $_REQUEST['error'] ) ) {
 			$text  = sanitize_text_field( wp_unslash( $_REQUEST['error'] ) );
 			$id    = 'settings-error';
 			$class = 'notice-error';
@@ -307,8 +311,10 @@ class Site_Toolkit_Options_Page {
 	 * @param string $tab Tab name.
 	 * @param string $message Message.
 	 * @param string $type Type.
+	 *
+	 * @return void
 	 */
-	public function stk_show_message( $tab, $message, $type ) {
+	public function stk_show_message( $tab, $message, $type ): void {
 
 		$arr_params = array(
 			'page' => 'stk-settings',
@@ -327,8 +333,10 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @param string $group The labels group.
 	 * @param string $label The label.
+	 *
+	 * @return void
 	 */
-	public function stk_show_tab_fields( $group, $label ) {
+	public function stk_show_tab_fields( $group, $label ): void {
 		settings_fields( $group );
 		do_settings_sections( $group );
 		submit_button( __( 'Save ', 'site-toolkit' ) . $label . __( ' options', 'site-toolkit' ), 'primary', 'stk-submit' );
@@ -336,8 +344,10 @@ class Site_Toolkit_Options_Page {
 
 	/**
 	 * Register and add settings.
+	 *
+	 * @return void
 	 */
-	public function stk_page_init() {
+	public function stk_page_init(): void {
 
 		/**
 		 * General
@@ -405,7 +415,6 @@ class Site_Toolkit_Options_Page {
 		/**
 		 * Dashboard
 		 */
-
 		register_setting(
 			'stk_dashboard_group',
 			'stk_dashboard'
@@ -437,7 +446,6 @@ class Site_Toolkit_Options_Page {
 		/**
 		 * SEO
 		 */
-
 		register_setting(
 			'stk_seo_group',
 			'stk_seo'
@@ -477,7 +485,6 @@ class Site_Toolkit_Options_Page {
 		/**
 		 * Archives
 		 */
-
 		register_setting(
 			'stk_archives_group',
 			'stk_archives'
@@ -509,7 +516,6 @@ class Site_Toolkit_Options_Page {
 		/**
 		 * Listing
 		 */
-
 		register_setting(
 			'stk_listing_group',
 			'stk_listing'
@@ -541,7 +547,6 @@ class Site_Toolkit_Options_Page {
 		/**
 		 * Login
 		 */
-
 		register_setting(
 			'stk_login_group',
 			'stk_login'
@@ -565,7 +570,6 @@ class Site_Toolkit_Options_Page {
 		/**
 		 * Uploads
 		 */
-
 		register_setting(
 			'stk_uploads_group',
 			'stk_uploads'
@@ -592,7 +596,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_general_callback() {
+	public function stk_general_callback(): void {
 		echo '<h3> </h3>';
 	}
 
@@ -601,7 +605,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_emoji_callback() {
+	public function stk_emoji_callback(): void {
 		$this->stk_create_radio( 'stk_general', 'emoji_support', __( 'Removes the extra code to generate emojis in the header.', 'site-toolkit' ) );
 	}
 
@@ -614,7 +618,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_create_radio( $group, $name, $description ) {
+	public function stk_create_radio( $group, $name, $description ): void {
 		?>
 		<label>
 			<input name="<?php echo esc_attr( $group ) . '[' . esc_attr( $name ) . ']'; ?>" type="radio"
@@ -636,7 +640,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_feeds_callback() {
+	public function stk_feeds_callback(): void {
 		$this->stk_create_radio( 'stk_general', 'rss_feeds', __( 'Removes RSS feeds links in the header.', 'site-toolkit' ) );
 	}
 
@@ -645,7 +649,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_rest_callback() {
+	public function stk_rest_callback(): void {
 		$this->stk_create_radio( 'stk_general', 'rest_api', __( 'Disables Rest API and removes Rest API links (only for not logged in users).', 'site-toolkit' ) );
 	}
 
@@ -654,7 +658,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_links_callback() {
+	public function stk_links_callback(): void {
 		$this->stk_create_radio( 'stk_general', 'links', __( 'Removes RSD link, wlwmanifest Link, shortlink, previous/next post Link in the header.', 'site-toolkit' ) );
 	}
 
@@ -663,7 +667,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_wp_callback() {
+	public function stk_wp_callback(): void {
 		$this->stk_create_radio( 'stk_general', 'wp_version', __( 'Removes the WordPress version meta in the header.', 'site-toolkit' ) );
 	}
 
@@ -672,7 +676,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_versions_callback() {
+	public function stk_versions_callback(): void {
 		$this->stk_create_radio( 'stk_general', 'versions', __( 'Replaces the style and javascript version with the file version.', 'site-toolkit' ) );
 	}
 
@@ -681,7 +685,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_dash_callback() {
+	public function stk_dash_callback(): void {
 		echo '<h3> </h3>';
 	}
 
@@ -690,7 +694,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_dashboard_callback() {
+	public function stk_dashboard_callback(): void {
 		$this->stk_create_radio( 'stk_dashboard', 'dashboard_widgets', __( 'Removes all the Dashboard widgets.', 'site-toolkit' ) );
 	}
 
@@ -699,7 +703,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_widgets_callback() {
+	public function stk_widgets_callback(): void {
 		?>
 		<style>#wp-widgetscontent-wrap, .medium {
 			width: 40%;
@@ -742,7 +746,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_seo_callback() {
+	public function stk_seo_callback(): void {
 		echo '<h3> </h3>';
 	}
 
@@ -751,7 +755,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_search_callback() {
+	public function stk_search_callback(): void {
 		$this->stk_create_radio( 'stk_seo', 'pretty_search', __( 'Sets up a pretty permalink for the search functionality.', 'site-toolkit' ) );
 	}
 
@@ -760,7 +764,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_header_callback() {
+	public function stk_header_callback(): void {
 		$this->stk_create_radio( 'stk_seo', 'header', __( 'Adds the If-Modified-Since Header into all pages/posts.', 'site-toolkit' ) );
 	}
 
@@ -769,7 +773,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_alt_callback() {
+	public function stk_alt_callback(): void {
 		$this->stk_create_radio( 'stk_seo', 'images_alt', __( 'Forces all the images to have an alt attribute.', 'site-toolkit' ) );
 	}
 
@@ -778,7 +782,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_archives_callback() {
+	public function stk_archives_callback(): void {
 		echo '<h3> </h3>';
 	}
 
@@ -787,7 +791,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_title_callback() {
+	public function stk_title_callback(): void {
 		$this->stk_create_radio( 'stk_archives', 'remove_title', __( 'Removes the prefix in the archive title.', 'site-toolkit' ) );
 	}
 
@@ -796,7 +800,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_redirect_callback() {
+	public function stk_redirect_callback(): void {
 		?>
 		<p>
 			<strong><?php esc_attr_e( 'Redirect author', 'site-toolkit' ); ?></strong><br/>
@@ -845,7 +849,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_listing_callback() {
+	public function stk_listing_callback(): void {
 		echo '<h3> </h3>';
 	}
 
@@ -854,7 +858,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_posts_column_callback() {
+	public function stk_posts_column_callback(): void {
 		$this->stk_create_radio( 'stk_listing', 'posts_columns', __( 'Shows the thumbnail in a column in the admin posts listing.', 'site-toolkit' ) );
 	}
 
@@ -863,7 +867,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_pages_column_callback() {
+	public function stk_pages_column_callback(): void {
 		$this->stk_create_radio( 'stk_listing', 'pages_columns', __( 'Shows the Page Template name in a column in the admin pages listing.', 'site-toolkit' ) );
 	}
 
@@ -872,7 +876,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_login_callback() {
+	public function stk_login_callback(): void {
 		echo '<h3> </h3>';
 	}
 
@@ -881,7 +885,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_login_input_callback() {
+	public function stk_login_input_callback(): void {
 		echo '<p>';
 		if ( get_option( 'permalink_structure' ) ) {
 			echo '<code>' . esc_url( trailingslashit( home_url() ) ) . '</code> <input type="text" name="stk_login[stk_login]" value="' . esc_html( $this->options['stk_login'] ) . '">' . ( $this->stk_use_trailing_slashes() ? ' <code>/</code>' : '' );
@@ -902,7 +906,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return bool
 	 */
-	public function stk_use_trailing_slashes() {
+	public function stk_use_trailing_slashes(): bool {
 		return '/' === substr( get_option( 'permalink_structure' ), - 1, 1 );
 	}
 
@@ -911,7 +915,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_uploads_callback() {
+	public function stk_uploads_callback(): void {
 		echo '<h3> </h3>';
 	}
 
@@ -920,7 +924,7 @@ class Site_Toolkit_Options_Page {
 	 *
 	 * @return void
 	 */
-	public function stk_clean_names_callback() {
+	public function stk_clean_names_callback(): void {
 		$this->stk_create_radio( 'stk_uploads', 'clean_names', __( 'Removes all the special chars in the filename when you upload any file.', 'site-toolkit' ) );
 	}
 

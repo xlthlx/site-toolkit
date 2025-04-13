@@ -8,6 +8,6 @@
   ],
   "homepage": "https://github.com/xlthlx/site-toolkit",
   "devDependencies": {
-    "@wordpress/env": "^10.19.0"
+    "@wordpress/env": "^10.22.0"
   }
 }

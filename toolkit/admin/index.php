@@ -13,7 +13,6 @@ global $defaults;
 require_once 'class-site-toolkit-options-page.php';
 add_action( 'plugins_loaded', array( 'Site_Toolkit_Options_Page', 'stk_get_instance' ) );
 add_action( 'admin_init', 'stk_plugin_settings' );
-add_action( 'init', 'stk_language_settings' );
 
 
 /**
@@ -39,16 +38,4 @@ function stk_add_plugin_settings( $plugin_actions, $plugin_file ) {
 	}
 
 	return array_merge( $new_actions, $plugin_actions );
-}
-
-/**
- * Load localisation.
- *
- * @return void
- */
-function stk_language_settings() {
-	/**
-	 * Load localizations if available.
-	 */
-	load_plugin_textdomain( 'site-toolkit', false, 'site-toolkit/languages' );
 }
