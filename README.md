@@ -1,9 +1,4 @@
-# ![Site Toolkit](https://ps.w.org/site-toolkit/assets/banner-772x250.png "WordPress Plugin")
-
-[![Version](https://img.shields.io/badge/version-1.1.3-blueviolet)](https://plugintests.com/plugins/wporg/site-toolkit/latest) [![License](https://img.shields.io/badge/license-GPL_v3%2B-blueviolet)](https://github.com/xlthlx/site-toolkit/blob/main/LICENSE)
-![WordPress Plugin Downloads](https://img.shields.io/wordpress/plugin/dt/site-toolkit?color=blueviolet) [![WP compatibility](https://plugintests.com/plugins/wporg/site-toolkit/wp-badge.svg)](https://plugintests.com/plugins/wporg/site-toolkit/latest) [![PHP compatibility](https://plugintests.com/plugins/wporg/site-toolkit/php-badge.svg)](https://plugintests.com/plugins/wporg/site-toolkit/latest)
-
-[![Preview](https://img.shields.io/badge/live-preview-blueviolet?logo=wordpress&style=for-the-badge)](https://playground.wordpress.net/?mode=seamless#{%22$schema%22:%22https://playground.wordpress.net/blueprint-schema.json%22,%22landingPage%22:%22/wp-admin/admin.php?page=stk-settings%22,%22login%22:true,%22preferredVersions%22:{%22php%22:%228.0%22,%22wp%22:%22latest%22},%22siteOptions%22:{%22blogname%22:%22Site%20Toolkit%22,%22blogdescription%22:%22Site%20Toolkit%20is%20a%20WordPress%20plugin%20that%20gives%20you%20a%20lot%20of%20options%20to%20improve%20your%20blog/website.%22},%22plugins%22:[%22site-toolkit%22]})
+# ![Site Toolkit](assets/banner-772x250.png "WordPress Plugin")
 
 **Contributors:** xlthlx \
 **Donate link:** https://paypal.me/xlthlx \
@@ -60,21 +55,13 @@ It has seven sections to manage different functionalities:
 
 1. Clean File Names: Removes all the special chars in the filename when you upload any file.
 
-## Languages
-
-English, Italian.
-
 ## Installation
 
-1. Upload `site-toolkit` folder to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Enjoy
+N/A
 
 ## Frequently Asked Questions
 
-### Can I translate the plugin interface?
-
-Yes, just use the .POT file in the `languages` folder.
+N/A
 
 ## Screenshots
 
@@ -161,7 +148,3 @@ N/A
 
 Site Toolkit is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with Site Toolkit.
 If not, see https://www.gnu.org/licenses/gpl-3.0.html.
-
-## Support
-
-If you need support or have a feature request, please use the [support forum](https://wordpress.org/support/plugin/site-toolkit/).

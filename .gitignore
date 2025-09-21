@@ -5,14 +5,8 @@
 # Do NOT ignore .gitignore
 !.gitignore
 
-# Do NOT ignore .distignore
-!.distignore
-
 # Do NOT ignore .readme.md
 !README.md
-
-# Do NOT ignore .circleci
-!.circleci
 
 # Do NOT ignore .wp-env.json
 !.wp-env.json
@@ -46,10 +40,10 @@ ehthumbs.db
 
 # Build Tools
 .idea
-/vendor
+node_modules
+composer.lock
 package-lock.json
 
 # Project specific
-/wp-content
-node_modules
+/wp-content/
 phpcs.xml.cache

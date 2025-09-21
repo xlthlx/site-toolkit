@@ -47,21 +47,13 @@ It has seven sections to manage different functionalities:
 = Uploads =
 1. Clean File Names: Removes all the special chars in the filename when you upload any file.
 
-== Languages ==
-
-English, Italian.
-
 == Installation ==
 
-1. Upload `site-toolkit` folder to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Enjoy
+N/A
 
 == Frequently Asked Questions ==
 
-= Can I translate the plugin interface? =
-
-Yes, just use the .POT file in the `languages` folder.
+N/A
 
 == Screenshots ==
 
@@ -118,7 +110,3 @@ N/A
 
 Site Toolkit is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with Site Toolkit.
 If not, see https://www.gnu.org/licenses/gpl-3.0.html.
-
-== Support ==
-
-If you need support or have a feature request, please use the [support forum](https://wordpress.org/support/plugin/site-toolkit/).

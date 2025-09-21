@@ -1,7 +1,7 @@
 {
   "name": "xlthlx/site-toolkit",
   "type": "wordpress-plugin",
-  "description": "",
+  "description": "Plugin with a set of tools for WordPress admin and frontend.",
   "keywords": [
     "WordPress",
     "Plugins"
@@ -11,7 +11,7 @@
   "authors": [
     {
       "name": "xlthlx",
-      "homepage": "https://xlthlx.com"
+      "homepage": "https://github.com/xlthlx/site-toolkit/"
     }
   ],
   "require-dev": {
