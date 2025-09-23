@@ -18,7 +18,6 @@
     "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
     "wptrt/wpthemereview": "^0.2.1",
     "php-parallel-lint/php-parallel-lint": "^1.4.0",
-    "wp-cli/i18n-command": "^2.6.3",
     "wpreadme2markdown/wp2md": "^4.1.2"
   },
   "scripts": {
@@ -26,7 +25,6 @@
     "lint:wpcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs --ignore=vendor/*,node_modules/*,inc/cmb2/*,wp-content/* --extensions=php . -n -v --report-file=report.txt",
     "lint:wpcs:fix": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf --ignore=vendor/*,node_modules/*,inc/cmb2/*,wp-content/* --extensions=php .",
     "lint:php": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor --exclude inc/cmb2 .",
-    "make:pot": "wp i18n make-pot . languages/site-toolkit.pot",
     "readme": "@php ./vendor/wpreadme2markdown/wp2md/bin/wp2md -i readme.txt -o README.md"
   },
   "config": {

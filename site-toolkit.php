@@ -13,7 +13,7 @@
  * Plugin Name:       Site Toolkit
  * Plugin URI:        https://wordpress.org/plugins/site-toolkit/
  * Description:       Sets of tools for WordPress admin and frontend.
- * Version:           1.1.3
+ * Version:           1.1.4
  * Requires at least: 5.9
  * Requires PHP:      8.0
  * Author:            xlthlx
